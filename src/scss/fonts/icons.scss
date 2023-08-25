@@ -1,0 +1,74 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+._icon-arr_top_right:before {
+	content: "\e912";
+}
+._icon-select_arr:before {
+	content: "\e907";
+}
+._icon-error:before {
+	content: "\e902";
+}
+._icon-card_bathroom:before {
+	content: "\e900";
+}
+._icon-card_bedroom:before {
+	content: "\e901";
+}
+._icon-card_square:before {
+	content: "\e903";
+}
+._icon-filter:before {
+	content: "\e904";
+}
+._icon-hd_arr-bottom:before {
+	content: "\e905";
+}
+._icon-hd_favorite:before {
+	content: "\e906";
+}
+._icon-hd_tel:before {
+	content: "\e908";
+}
+._icon-hd_user:before {
+	content: "\e909";
+}
+._icon-pagination_arr-left:before {
+	content: "\e90a";
+}
+._icon-pagination_arr-right:before {
+	content: "\e90b";
+}
+._icon-search:before {
+	content: "\e90c";
+}
+._icon-slider_arr-left:before {
+	content: "\e90d";
+}
+._icon-slider_arr-right:before {
+	content: "\e90e";
+}
+._icon-telegram:before {
+	content: "\e90f";
+}
+._icon-viber:before {
+	content: "\e910";
+}
+._icon-whatsapp:before {
+	content: "\e911";
+}

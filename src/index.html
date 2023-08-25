@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-home">
+			<section class="page__main main-page">
+				<div class="main-page__container">
+					<h1 class="main-page__title">
+						Недвижимость в Дубае
+					</h1>
+					<button type="button" class="main-page__btn" data-popup=".popup-form_consultation">
+						найди свою
+					</button>
+					<!-- <div class="main-page__filter filter-main-page">
+						<div class="filter-main-page__item">
+							<div class="filter-main-page__title">Город</div>
+							<div class="filter-main-page__select select-filter-main-page">
+								<button type="button" class="select-filter-main-page__title">
+									Любой
+									<span class="select-filter-main-page__arr _icon-select_arr"></span>
+								</button>
+								<div class="select-filter-main-page__body">
+									<div class="select-filter-main-page__item">Любой</div>
+									<div class="select-filter-main-page__item">Дубай</div>
+									<div class="select-filter-main-page__item">Абу-даби</div>
+								</div>
+							</div>
+						</div>
+						<div class="filter-main-page__item">
+							<div class="filter-main-page__title">Тип недвижимости</div>
+							<div class="filter-main-page__select select-filter-main-page">
+								<button type="button" class="select-filter-main-page__title">
+									Все
+									<span class="select-filter-main-page__arr _icon-select_arr"></span>
+								</button>
+								<div class="select-filter-main-page__body">
+									<div class="select-filter-main-page__item">Все</div>
+									<div class="select-filter-main-page__item">Квартиры</div>
+									<div class="select-filter-main-page__item">Апартаменты</div>
+									<div class="select-filter-main-page__item">Пентхаусы</div>
+									<div class="select-filter-main-page__item">Лофты</div>
+									<div class="select-filter-main-page__item">Таунхаусы</div>
+									<div class="select-filter-main-page__item">Дома</div>
+									<div class="select-filter-main-page__item">Виллы</div>
+									<div class="select-filter-main-page__item">Таунхаусы</div>
+								</div>
+							</div>
+						</div>
+						<div class="filter-main-page__item">
+							<div class="filter-main-page__title">Тип недвижимости</div>
+							<div class="filter-main-page__select select-filter-main-page">
+								<button type="button" class="select-filter-main-page__title">
+									Район
+									<span class="select-filter-main-page__arr _icon-select_arr"></span>
+								</button>
+								<div class="select-filter-main-page__body">
+									<div class="select-filter-main-page__item">Все</div>
+									<div class="select-filter-main-page__item">Business Bay</div>
+									<div class="select-filter-main-page__item">Downtown Dubai</div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+				<div class="main-page__image-ibg"><img src="@img/main/bg.png" alt=""></div>
+			</section>
+			<section class="page-home__hits hits-home">
+				<div class="hits-home__container">
+					<div class="hits-home__title title">TOП недвижимость</div>
+					<div class="cards-main">
+						<div class="cards-main__slider swiper">
+							<div class="cards-main__wrapper swiper-wrapper">
+								<div class="cards-main__slide swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<div class="card__new">
+												new
+											</div>
+											<!-- чтобы применились стили когда карточка добавлена в изрбанное добавить класс
+																		active -->
+											<!-- <button class="favorite-card-btn">
+												<span></span>
+											</button> -->
+										</div>
+										<a href="" class="card__img">
+											<div class="card__slider swiper">
+												<div class="card__wrapper swiper-wrapper">
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/bayview.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+												</div>
+												<div class="card-button card-button_prev _icon-slider_arr-left"></div>
+												<div class="card-button card-button_next _icon-slider_arr-right"></div>
+												<div class="swiper-pagination swiper-pagination_card"></div>
+											</div>
+										</a>
+										<div class="card__info info-card">
+											<div class="info-card__top top-card-info">
+												<div class="top-card-info__loc">
+													Tilal Al Ghaf
+												</div>
+												<a href="" class="top-card-info__title">
+													7-спальная вилла в Serenity Mansions
+												</a>
+												<div class="top-card-info__subtitle">
+													<p>
+														XXII CARAT Villas — это не только захватывающие морские пейзажи, ощущение простора
+													</p>
+												</div>
+												<div class="top-card-info__price">
+													<span>23 239 000 €</span>
+												</div>
+											</div>
+											<div class="info-card__bottom bottom-card-info">
+												<div class="bottom-card-info__row">
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Спален</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bedroom"></div>
+															<div class="item-bottom-info-card__quantity">7</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Ванн</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bathroom"></div>
+															<div class="item-bottom-info-card__quantity">4</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Этаж</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_floor"></div>
+															<div class="item-bottom-info-card__quantity">3</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Площадь <span>м2</span></div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_square"></div>
+															<div class="item-bottom-info-card__quantity">365 <span>м2</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<div class="card__new">
+												new
+											</div>
+											<!-- чтобы применились стили когда карточка добавлена в изрбанное добавить класс
+																		active -->
+											<!-- <button class="favorite-card-btn">
+												<span></span>
+											</button> -->
+										</div>
+										<a href="" class="card__img">
+											<div class="card__slider swiper">
+												<div class="card__wrapper swiper-wrapper">
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/bayview.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+												</div>
+												<div class="card-button card-button_prev _icon-slider_arr-left"></div>
+												<div class="card-button card-button_next _icon-slider_arr-right"></div>
+												<div class="swiper-pagination swiper-pagination_card"></div>
+											</div>
+										</a>
+										<div class="card__info info-card">
+											<div class="info-card__top top-card-info">
+												<div class="top-card-info__loc">
+													Tilal Al Ghaf
+												</div>
+												<a href="" class="top-card-info__title">
+													7-спальная вилла в Serenity Mansions
+												</a>
+												<div class="top-card-info__subtitle">
+													<p>
+														XXII CARAT Villas — это не только захватывающие морские пейзажи, ощущение простора
+													</p>
+												</div>
+												<div class="top-card-info__price">
+													<span>23 239 000 €</span>
+												</div>
+											</div>
+											<div class="info-card__bottom bottom-card-info">
+												<div class="bottom-card-info__row">
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Спален</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bedroom"></div>
+															<div class="item-bottom-info-card__quantity">7</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Ванн</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bathroom"></div>
+															<div class="item-bottom-info-card__quantity">4</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Этаж</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_floor"></div>
+															<div class="item-bottom-info-card__quantity">3</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Площадь <span>м2</span></div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_square"></div>
+															<div class="item-bottom-info-card__quantity">365 <span>м2</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<div class="card__new">
+												new
+											</div>
+											<!-- чтобы применились стили когда карточка добавлена в изрбанное добавить класс
+																		active -->
+											<!-- <button class="favorite-card-btn">
+												<span></span>
+											</button> -->
+										</div>
+										<a href="" class="card__img">
+											<div class="card__slider swiper">
+												<div class="card__wrapper swiper-wrapper">
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/bayview.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+												</div>
+												<div class="card-button card-button_prev _icon-slider_arr-left"></div>
+												<div class="card-button card-button_next _icon-slider_arr-right"></div>
+												<div class="swiper-pagination swiper-pagination_card"></div>
+											</div>
+										</a>
+										<div class="card__info info-card">
+											<div class="info-card__top top-card-info">
+												<div class="top-card-info__loc">
+													Tilal Al Ghaf
+												</div>
+												<a href="" class="top-card-info__title">
+													7-спальная вилла в Serenity Mansions
+												</a>
+												<div class="top-card-info__subtitle">
+													<p>
+														XXII CARAT Villas — это не только захватывающие морские пейзажи, ощущение простора
+													</p>
+												</div>
+												<div class="top-card-info__price">
+													<span>23 239 000 €</span>
+												</div>
+											</div>
+											<div class="info-card__bottom bottom-card-info">
+												<div class="bottom-card-info__row">
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Спален</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bedroom"></div>
+															<div class="item-bottom-info-card__quantity">7</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Ванн</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bathroom"></div>
+															<div class="item-bottom-info-card__quantity">4</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Этаж</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_floor"></div>
+															<div class="item-bottom-info-card__quantity">3</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Площадь <span>м2</span></div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_square"></div>
+															<div class="item-bottom-info-card__quantity">365 <span>м2</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<div class="card__new">
+												new
+											</div>
+											<!-- чтобы применились стили когда карточка добавлена в изрбанное добавить класс
+																		active -->
+											<!-- <button class="favorite-card-btn">
+												<span></span>
+											</button> -->
+										</div>
+										<a href="" class="card__img">
+											<div class="card__slider swiper">
+												<div class="card__wrapper swiper-wrapper">
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/bayview.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+												</div>
+												<div class="card-button card-button_prev _icon-slider_arr-left"></div>
+												<div class="card-button card-button_next _icon-slider_arr-right"></div>
+												<div class="swiper-pagination swiper-pagination_card"></div>
+											</div>
+										</a>
+										<div class="card__info info-card">
+											<div class="info-card__top top-card-info">
+												<div class="top-card-info__loc">
+													Tilal Al Ghaf
+												</div>
+												<a href="" class="top-card-info__title">
+													7-спальная вилла в Serenity Mansions
+												</a>
+												<div class="top-card-info__subtitle">
+													<p>
+														XXII CARAT Villas — это не только захватывающие морские пейзажи, ощущение простора
+													</p>
+												</div>
+												<div class="top-card-info__price">
+													<span>23 239 000 €</span>
+												</div>
+											</div>
+											<div class="info-card__bottom bottom-card-info">
+												<div class="bottom-card-info__row">
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Спален</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bedroom"></div>
+															<div class="item-bottom-info-card__quantity">7</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Ванн</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bathroom"></div>
+															<div class="item-bottom-info-card__quantity">4</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Этаж</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_floor"></div>
+															<div class="item-bottom-info-card__quantity">3</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Площадь <span>м2</span></div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_square"></div>
+															<div class="item-bottom-info-card__quantity">365 <span>м2</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<div class="card__new">
+												new
+											</div>
+											<!-- чтобы применились стили когда карточка добавлена в изрбанное добавить класс
+																		active -->
+											<!-- <button class="favorite-card-btn">
+												<span></span>
+											</button> -->
+										</div>
+										<a href="" class="card__img">
+											<div class="card__slider swiper">
+												<div class="card__wrapper swiper-wrapper">
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/bayview.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+												</div>
+												<div class="card-button card-button_prev _icon-slider_arr-left"></div>
+												<div class="card-button card-button_next _icon-slider_arr-right"></div>
+												<div class="swiper-pagination swiper-pagination_card"></div>
+											</div>
+										</a>
+										<div class="card__info info-card">
+											<div class="info-card__top top-card-info">
+												<div class="top-card-info__loc">
+													Tilal Al Ghaf
+												</div>
+												<a href="" class="top-card-info__title">
+													7-спальная вилла в Serenity Mansions
+												</a>
+												<div class="top-card-info__subtitle">
+													<p>
+														XXII CARAT Villas — это не только захватывающие морские пейзажи, ощущение простора
+													</p>
+												</div>
+												<div class="top-card-info__price">
+													<span>23 239 000 €</span>
+												</div>
+											</div>
+											<div class="info-card__bottom bottom-card-info">
+												<div class="bottom-card-info__row">
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Спален</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bedroom"></div>
+															<div class="item-bottom-info-card__quantity">7</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Ванн</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bathroom"></div>
+															<div class="item-bottom-info-card__quantity">4</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Этаж</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_floor"></div>
+															<div class="item-bottom-info-card__quantity">3</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Площадь <span>м2</span></div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_square"></div>
+															<div class="item-bottom-info-card__quantity">365 <span>м2</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards-main__pagination swiper-pagination"></div>
+						</div>
+						<button class="cards-main-button cards-main-button_prev _icon-slider_arr-left"></button>
+						<button class="cards-main-button cards-main-button_next _icon-slider_arr-right"></button>
+						<!-- <a href="" class="cards-main__link blue-btn">Перейти в каталог</a> -->
+					</div>
+				</div>
+			</section>
+			<section class="page-home__selection selection-home-page">
+				<div class="selection-home-page__container">
+					<div class="selection-home-page__title title">Подборка объектов</div>
+					<div class="cards-main">
+						<div class="cards-main__slider swiper">
+							<div class="cards-main__wrapper swiper-wrapper">
+								<div class="cards-main__slide swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<div class="card__new">
+												new
+											</div>
+											<!-- чтобы применились стили когда карточка добавлена в изрбанное добавить класс
+																									active -->
+											<!-- <button class="favorite-card-btn">
+																			<span></span>
+																		</button> -->
+										</div>
+										<a href="" class="card__img">
+											<div class="card__slider swiper">
+												<div class="card__wrapper swiper-wrapper">
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/bayview.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+												</div>
+												<div class="card-button card-button_prev _icon-slider_arr-left"></div>
+												<div class="card-button card-button_next _icon-slider_arr-right"></div>
+												<div class="swiper-pagination swiper-pagination_card"></div>
+											</div>
+										</a>
+										<div class="card__info info-card">
+											<div class="info-card__top top-card-info">
+												<div class="top-card-info__loc">
+													Tilal Al Ghaf
+												</div>
+												<a href="" class="top-card-info__title">
+													7-спальная вилла в Serenity Mansions
+												</a>
+												<div class="top-card-info__subtitle">
+													<p>
+														XXII CARAT Villas — это не только захватывающие морские пейзажи, ощущение простора
+													</p>
+												</div>
+												<div class="top-card-info__price">
+													<span>23 239 000 €</span>
+												</div>
+											</div>
+											<div class="info-card__bottom bottom-card-info">
+												<div class="bottom-card-info__row">
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Спален</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bedroom"></div>
+															<div class="item-bottom-info-card__quantity">7</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Ванн</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bathroom"></div>
+															<div class="item-bottom-info-card__quantity">4</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Этаж</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_floor"></div>
+															<div class="item-bottom-info-card__quantity">3</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Площадь <span>м2</span></div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_square"></div>
+															<div class="item-bottom-info-card__quantity">365 <span>м2</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<div class="card__new">
+												new
+											</div>
+											<!-- чтобы применились стили когда карточка добавлена в изрбанное добавить класс
+																									active -->
+											<!-- <button class="favorite-card-btn">
+																			<span></span>
+																		</button> -->
+										</div>
+										<a href="" class="card__img">
+											<div class="card__slider swiper">
+												<div class="card__wrapper swiper-wrapper">
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/bayview.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+												</div>
+												<div class="card-button card-button_prev _icon-slider_arr-left"></div>
+												<div class="card-button card-button_next _icon-slider_arr-right"></div>
+												<div class="swiper-pagination swiper-pagination_card"></div>
+											</div>
+										</a>
+										<div class="card__info info-card">
+											<div class="info-card__top top-card-info">
+												<div class="top-card-info__loc">
+													Tilal Al Ghaf
+												</div>
+												<a href="" class="top-card-info__title">
+													7-спальная вилла в Serenity Mansions
+												</a>
+												<div class="top-card-info__subtitle">
+													<p>
+														XXII CARAT Villas — это не только захватывающие морские пейзажи, ощущение простора
+													</p>
+												</div>
+												<div class="top-card-info__price">
+													<span>23 239 000 €</span>
+												</div>
+											</div>
+											<div class="info-card__bottom bottom-card-info">
+												<div class="bottom-card-info__row">
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Спален</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bedroom"></div>
+															<div class="item-bottom-info-card__quantity">7</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Ванн</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bathroom"></div>
+															<div class="item-bottom-info-card__quantity">4</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Этаж</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_floor"></div>
+															<div class="item-bottom-info-card__quantity">3</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Площадь <span>м2</span></div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_square"></div>
+															<div class="item-bottom-info-card__quantity">365 <span>м2</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<div class="card__new">
+												new
+											</div>
+											<!-- чтобы применились стили когда карточка добавлена в изрбанное добавить класс
+																									active -->
+											<!-- <button class="favorite-card-btn">
+																			<span></span>
+																		</button> -->
+										</div>
+										<a href="" class="card__img">
+											<div class="card__slider swiper">
+												<div class="card__wrapper swiper-wrapper">
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/bayview.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+												</div>
+												<div class="card-button card-button_prev _icon-slider_arr-left"></div>
+												<div class="card-button card-button_next _icon-slider_arr-right"></div>
+												<div class="swiper-pagination swiper-pagination_card"></div>
+											</div>
+										</a>
+										<div class="card__info info-card">
+											<div class="info-card__top top-card-info">
+												<div class="top-card-info__loc">
+													Tilal Al Ghaf
+												</div>
+												<a href="" class="top-card-info__title">
+													7-спальная вилла в Serenity Mansions
+												</a>
+												<div class="top-card-info__subtitle">
+													<p>
+														XXII CARAT Villas — это не только захватывающие морские пейзажи, ощущение простора
+													</p>
+												</div>
+												<div class="top-card-info__price">
+													<span>23 239 000 €</span>
+												</div>
+											</div>
+											<div class="info-card__bottom bottom-card-info">
+												<div class="bottom-card-info__row">
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Спален</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bedroom"></div>
+															<div class="item-bottom-info-card__quantity">7</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Ванн</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bathroom"></div>
+															<div class="item-bottom-info-card__quantity">4</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Этаж</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_floor"></div>
+															<div class="item-bottom-info-card__quantity">3</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Площадь <span>м2</span></div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_square"></div>
+															<div class="item-bottom-info-card__quantity">365 <span>м2</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<div class="card__new">
+												new
+											</div>
+											<!-- чтобы применились стили когда карточка добавлена в изрбанное добавить класс
+																									active -->
+											<!-- <button class="favorite-card-btn">
+																			<span></span>
+																		</button> -->
+										</div>
+										<a href="" class="card__img">
+											<div class="card__slider swiper">
+												<div class="card__wrapper swiper-wrapper">
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/bayview.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+												</div>
+												<div class="card-button card-button_prev _icon-slider_arr-left"></div>
+												<div class="card-button card-button_next _icon-slider_arr-right"></div>
+												<div class="swiper-pagination swiper-pagination_card"></div>
+											</div>
+										</a>
+										<div class="card__info info-card">
+											<div class="info-card__top top-card-info">
+												<div class="top-card-info__loc">
+													Tilal Al Ghaf
+												</div>
+												<a href="" class="top-card-info__title">
+													7-спальная вилла в Serenity Mansions
+												</a>
+												<div class="top-card-info__subtitle">
+													<p>
+														XXII CARAT Villas — это не только захватывающие морские пейзажи, ощущение простора
+													</p>
+												</div>
+												<div class="top-card-info__price">
+													<span>23 239 000 €</span>
+												</div>
+											</div>
+											<div class="info-card__bottom bottom-card-info">
+												<div class="bottom-card-info__row">
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Спален</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bedroom"></div>
+															<div class="item-bottom-info-card__quantity">7</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Ванн</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bathroom"></div>
+															<div class="item-bottom-info-card__quantity">4</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Этаж</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_floor"></div>
+															<div class="item-bottom-info-card__quantity">3</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Площадь <span>м2</span></div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_square"></div>
+															<div class="item-bottom-info-card__quantity">365 <span>м2</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="card">
+										<div class="card__top">
+											<div class="card__new">
+												new
+											</div>
+											<!-- чтобы применились стили когда карточка добавлена в изрбанное добавить класс
+																									active -->
+											<!-- <button class="favorite-card-btn">
+																			<span></span>
+																		</button> -->
+										</div>
+										<a href="" class="card__img">
+											<div class="card__slider swiper">
+												<div class="card__wrapper swiper-wrapper">
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/bayview.png" alt="">
+													</div>
+													<div class="card__slide swiper-slide">
+														<img src="@img/card/serenity.png" alt="">
+													</div>
+												</div>
+												<div class="card-button card-button_prev _icon-slider_arr-left"></div>
+												<div class="card-button card-button_next _icon-slider_arr-right"></div>
+												<div class="swiper-pagination swiper-pagination_card"></div>
+											</div>
+										</a>
+										<div class="card__info info-card">
+											<div class="info-card__top top-card-info">
+												<div class="top-card-info__loc">
+													Tilal Al Ghaf
+												</div>
+												<a href="" class="top-card-info__title">
+													7-спальная вилла в Serenity Mansions
+												</a>
+												<div class="top-card-info__subtitle">
+													<p>
+														XXII CARAT Villas — это не только захватывающие морские пейзажи, ощущение простора
+													</p>
+												</div>
+												<div class="top-card-info__price">
+													<span>23 239 000 €</span>
+												</div>
+											</div>
+											<div class="info-card__bottom bottom-card-info">
+												<div class="bottom-card-info__row">
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Спален</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bedroom"></div>
+															<div class="item-bottom-info-card__quantity">7</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Ванн</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_bathroom"></div>
+															<div class="item-bottom-info-card__quantity">4</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Этаж</div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_floor"></div>
+															<div class="item-bottom-info-card__quantity">3</div>
+														</div>
+													</div>
+													<div class="bottom-card-info__item item-bottom-info-card">
+														<div class="item-bottom-info-card__title">Площадь <span>м2</span></div>
+														<div class="item-bottom-info-card__wrapper">
+															<div class="item-bottom-info-card__icon _icon-card_square"></div>
+															<div class="item-bottom-info-card__quantity">365 <span>м2</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards-main__pagination swiper-pagination"></div>
+						</div>
+						<button class="cards-main-button cards-main-button_prev _icon-slider_arr-left"></button>
+						<button class="cards-main-button cards-main-button_next _icon-slider_arr-right"></button>
+						<!-- <a href="" class="cards-main__link blue-btn">Перейти в каталог</a> -->
+					</div>
+				</div>
+			</section>
+			<section class="page-home__consultation consultation-home-page">
+				<div class="consultation-home-page__container">
+					<div class="consultation-home-page__title title">Персональная консультация</div>
+					<div class="consultation-home-page__row">
+						<div class="consultation-home-page__img">
+							<img src="@img/consultation/main.png" alt="">
+						</div>
+						<div class="consultation-home-page__info info-consultation-home">
+							<div class="info-consultation-home__body">
+								<div class="info-consultation-home__title">
+									Получите профессиональную консультацию
+								</div>
+								<div class="info-consultation-home__subtitle">
+									Lorem ipsum dolor sit amet consectetur. Nam augue tellus facilisis vulputate amet tellus. Sit
+									ullamcorper in maecenas
+									sit est duis massa. Egestas at massa sed scelerisque sit sapien feugiat mollis nunc. Nibh quis est
+									urna velit erat.
+									Pulvinar velit est gravida ornare mattis ultrices faucibus in.
+								</div>
+								<div class="info-consultation-home__text">
+									Заполните форму и наш агент свяжется с Вами в ближайшее время
+								</div>
+							</div>
+							<button type="button" data-popup=".popup-form_consultation" class="info-consultation-home__btn">
+								Заказать консультацию
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page-home__district district-home-page">
+				<div class="district-home-page__container">
+					<div class="district-home-page__title title">Районы</div>
+					<div class="cards-main">
+						<div class="cards-main__slider swiper">
+							<div class="cards-main__wrapper swiper-wrapper">
+								<div class="cards-main__slide swiper-slide">
+									<div class="district-card">
+										<a href="" class="district-card__img">
+											<img src="@img/district/BUSINESS_BAY.png" alt="">
+										</a>
+										<div class="district-card__info">
+											<a href="" class="district-card__title">BUSINESS BAY</a>
+											<div class="district-card__subtitle">
+												Центральный деловой район в Дубае. Он известен своей неповторимостью...
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="district-card">
+										<a href="" class="district-card__img">
+											<img src="@img/district/DOWNTOWN_DUBAI.png" alt="">
+										</a>
+										<div class="district-card__info">
+											<a href="" class="district-card__title">DOWNTOWN DUBAI</a>
+											<div class="district-card__subtitle">
+												Центральный деловой район в Дубае. Он известен своей неповторимостью...
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="district-card">
+										<a href="" class="district-card__img">
+											<img src="@img/district/DUBAI_MARINA.png" alt="">
+										</a>
+										<div class="district-card__info">
+											<a href="" class="district-card__title">DUBAI MARINA</a>
+											<div class="district-card__subtitle">
+												Центральный деловой район в Дубае. Он известен своей неповторимостью...
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="district-card">
+										<a href="" class="district-card__img">
+											<img src="@img/district/PALM_JUMEIRAH.png" alt="">
+										</a>
+										<div class="district-card__info">
+											<a href="" class="district-card__title">PALM JUMEIRAH</a>
+											<div class="district-card__subtitle">
+												Центральный деловой район в Дубае. Он известен своей неповторимостью...
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="district-card">
+										<a href="" class="district-card__img">
+											<img src="@img/district/JUMEIRAH_VILLAGE_CIRCLE.png" alt="">
+										</a>
+										<div class="district-card__info">
+											<a href="" class="district-card__title">JUMEIRAH VILLAGE CIRCLE</a>
+											<div class="district-card__subtitle">
+												Центральный деловой район в Дубае. Он известен своей неповторимостью...
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="district-card">
+										<a href="" class="district-card__img">
+											<img src="@img/district/DUBAI_HILLS_ESTATE.png" alt="">
+										</a>
+										<div class="district-card__info">
+											<a href="" class="district-card__title">DUBAI HILLS ESTATE</a>
+											<div class="district-card__subtitle">
+												Центральный деловой район в Дубае. Он известен своей неповторимостью...
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="district-card">
+										<a href="" class="district-card__img">
+											<img src="@img/district/THE_LAGOONS.png" alt="">
+										</a>
+										<div class="district-card__info">
+											<a href="" class="district-card__title">THE LAGOONS</a>
+											<div class="district-card__subtitle">
+												Центральный деловой район в Дубае. Он известен своей неповторимостью...
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="district-card">
+										<a href="" class="district-card__img">
+											<img src="@img/district/DUBAI_HARBOUR.png" alt="">
+										</a>
+										<div class="district-card__info">
+											<a href="" class="district-card__title">DUBAI HARBOUR</a>
+											<div class="district-card__subtitle">
+												Центральный деловой район в Дубае. Он известен своей неповторимостью...
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="district-card">
+										<a href="" class="district-card__img">
+											<img src="@img/district/JUMEIRAH_BEACH_RESIDENCE.png" alt="">
+										</a>
+										<div class="district-card__info">
+											<a href="" class="district-card__title">JUMEIRAH BEACH RESIDENCE</a>
+											<div class="district-card__subtitle">
+												Центральный деловой район в Дубае. Он известен своей неповторимостью...
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="district-card">
+										<a href="" class="district-card__img">
+											<img src="@img/district/JUMEIRAH_LAKE_TOWERS.png" alt="">
+										</a>
+										<div class="district-card__info">
+											<a href="" class="district-card__title">JUMEIRAH LAKE TOWERS</a>
+											<div class="district-card__subtitle">
+												Центральный деловой район в Дубае. Он известен своей неповторимостью...
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="district-card">
+										<a href="" class="district-card__img">
+											<img src="@img/district/DUBAI_LAND.png" alt="">
+										</a>
+										<div class="district-card__info">
+											<a href="" class="district-card__title">DUBAI LAND</a>
+											<div class="district-card__subtitle">
+												Центральный деловой район в Дубае. Он известен своей неповторимостью...
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-main__slide swiper-slide">
+									<div class="district-card">
+										<a href="" class="district-card__img">
+											<img src="@img/district/Dubai_International_FinanciA.png" alt="">
+										</a>
+										<div class="district-card__info">
+											<a href="" class="district-card__title">Dubai International FinanciA</a>
+											<div class="district-card__subtitle">
+												Центральный деловой район в Дубае. Он известен своей неповторимостью...
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards-main__pagination swiper-pagination"></div>
+						</div>
+						<button class="cards-main-button cards-main-button_prev _icon-slider_arr-left"></button>
+						<button class="cards-main-button cards-main-button_next _icon-slider_arr-right"></button>
+						<!-- <a href="" class="cards-main__link blue-btn">Перейти в каталог</a> -->
+					</div>
+				</div>
+			</section>
+			<section class="page-home__services services-home-page">
+				<div class="services-home-page__container">
+					<div class="services-home-page__title title">OUR REAL ESTATE <br> SERVICES</div>
+					<div class="services-home-page__row">
+						<div class="services-home-page__img">
+							<img src="@img/services/bg.png" alt="">
+						</div>
+						<div class="services-home-page__benefits benefits-services-home"
+							data-da=".services-home-page__container, 768, last">
+							<div class="benefits-services-home__item">
+								<div class="benefits-services-home__title">более 14 лет</div>
+								<div class="benefits-services-home__subtitle">Опыт работы с недвижимостью</div>
+							</div>
+							<div class="benefits-services-home__item">
+								<div class="benefits-services-home__title">Более 2500</div>
+								<div class="benefits-services-home__subtitle">Оформленных сделок</div>
+							</div>
+							<div class="benefits-services-home__item">
+								<div class="benefits-services-home__title">более 6 языков</div>
+								<div class="benefits-services-home__subtitle">Обслуживаем клиентов</div>
+							</div>
+						</div>
+						<div class="services-home-page__info info-services-home">
+							<div class="info-services-home__body">
+								<div class="info-services-home__title">
+									Bonadomus
+								</div>
+								<div class="info-services-home__text">
+									Недвижимость - это наша страсть и любовь. Мы прошли путь покупателя тысячи раз и готовы стать и вашим
+									проводником.
+								</div>
+								<div class="info-services-home__subtitle">
+									При выполнении нашей работы руководствуемся правилами юридической этики и строго соблюдаем все нормы и
+									стандарты
+									профессиональной ответственности. Мы придерживаемся принципа сохранения конфиденциальности информации,
+									предоставленной
+								</div>
+							</div>
+							<a href="about.html" class="info-services-home__btn">
+								Подробнее
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_popup.htm',{})
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

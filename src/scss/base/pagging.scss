@@ -1,0 +1,47 @@
+.pagging {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	// .pagging__arrow
+	&__arrow {
+		&._disabled {
+			pointer-events: none;
+			color: #d9d9d9;
+		}
+		color: #baac72;
+	}
+	// .pagging__list
+	&__list {
+		display: flex;
+		li {
+		}
+	}
+	// .pagging__item
+	&__item {
+		padding: 0 10px;
+		height: 30px;
+		border: 1px solid #d9d9d9;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.3s ease 0s;
+
+		color: #767676;
+		text-align: center;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 28px; /* 155.556% */
+
+		@media (any-hover: hover) {
+			&:hover {
+				border: 1px solid #baac72;
+			}
+		}
+
+		&._active {
+			color: #baac72;
+			border: 1px solid #baac72;
+		}
+	}
+}
