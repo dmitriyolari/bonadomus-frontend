@@ -131,7 +131,7 @@ class Popup {
 			}
 			// Закриття на порожньому місці (popup__wrapper) та кнопки закриття (popup__close) для закриття
 			const buttonClose = e.target.closest(`[${this.options.attributeCloseButton}]`);
-			if (this._dataValue == '.popup-filter') {
+			if (this._dataValue == '.popup-filter' || this._dataValue == '.popup-images') {
 				if (buttonClose && this.isOpen) {
 					e.preventDefault();
 					this.close();
@@ -145,14 +145,17 @@ class Popup {
 		}.bind(this));
 		// Закриття ESC
 		document.addEventListener("keydown", function (e) {
-			if (this.options.closeEsc && e.which == 27 && e.code === 'Escape' && this.isOpen) {
-				e.preventDefault();
-				this.close();
-				return;
-			}
-			if (this.options.focusCatch && e.which == 9 && this.isOpen) {
-				this._focusCatch(e);
-				return;
+			if (this._dataValue !== '.popup-images') {
+
+				if (this.options.closeEsc && e.which == 27 && e.code === 'Escape' && this.isOpen) {
+					e.preventDefault();
+					this.close();
+					return;
+				}
+				if (this.options.focusCatch && e.which == 9 && this.isOpen) {
+					this._focusCatch(e);
+					return;
+				}
 			}
 		}.bind(this))
 

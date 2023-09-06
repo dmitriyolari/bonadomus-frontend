@@ -65,9 +65,16 @@
 	&__services {
 		background: #192b3f;
 		@media (min-width: $mobile) {
-			padding: 119px 0 81px;
+			padding: 119px 0 111px;
 		}
-		padding: 64px 0;
+		padding: 64px 0 80px;
+		.command {
+			padding-top: 64px;
+			padding-bottom: 0;
+			@media (min-width: $mobile) {
+				padding-top: 81px;
+			}
+		}
 	}
 }
 .main-page {
@@ -445,13 +452,41 @@
 		}
 		padding-bottom: 30px;
 	}
+
+	.district__slider {
+		@media (max-width: $mobile) {
+			padding: 0 17px;
+			margin: 0 -17px;
+		}
+	}
 }
 //===============================================================================================
 .services-home-page {
+	position: relative;
 	color: #fff;
+	.services-home-page__decor-top,
+	.services-home-page__decor-bottom {
+		pointer-events: none;
+		position: absolute;
+		z-index: 1;
+		display: none;
+		@media (min-width: $tablet) {
+			display: block;
+		}
+	}
+	.services-home-page__decor-top {
+		left: percent(148, 1920);
+		top: -254px;
+	}
+	.services-home-page__decor-bottom {
+		bottom: 0;
+		right: 0;
+	}
 	// .services-home-page__container
 
 	&__container {
+		position: relative;
+		z-index: 2;
 	}
 
 	// .services-home-page__title

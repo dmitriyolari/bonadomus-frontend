@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"not found"
+})
+
+<body>
+	<div class="circle-cursor circle-cursor--inner"></div>
+	<div class="circle-cursor circle-cursor--outer"></div>
+	<div class="wrapper wrapper-not-found">
+		<header class="wrapper-not-found__header">
+			<a href="index.html">
+				<img src="@img/header/hd_logo.svg" alt="">
+			</a>
+		</header>
+		<div class="wrapper-not-found__body">
+			<div class="wrapper-not-found__info">
+				<div class="wrapper-not-found__title">
+					404. Страница не найдена
+				</div>
+				<div class="wrapper-not-found__subtitle">
+					Возможно, она была перемещена, или вы просто неверно
+					указали адрес страницы.
+				</div>
+				<a href="index.html" class="wrapper-not-found__link _icon-arr_top_right">
+					Перейти На главную
+				</a>
+			</div>
+			<div class="wrapper-not-found__img">
+				<img src="@img/404/full_bg.png" alt="">
+			</div>
+		</div>
+		@@include('html/_popup.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

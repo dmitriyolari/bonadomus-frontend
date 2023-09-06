@@ -47,6 +47,13 @@ if (galleries.length) {
 				// plugins: [lgZoom, lgThumbnail],
 				licenseKey: '7EC452A9-0CFD441C-BD984C7C-17C8456E',
 				speed: 500,
+				download: false,
+				closeOnTap: false,
+				escKey: false,
+				hideControlOnEnd: true,
+				loop: false,
+				slideEndAnimation: false,
+				mode: "lg-fade"
 			})
 		})
 	});

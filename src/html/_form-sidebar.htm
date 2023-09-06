@@ -1,0 +1,57 @@
+<div class="page-object__side side-object-page">
+	<div class="sidebar__inner">
+		<div class="side-object-page__title">Обращайтесь ко мне</div>
+		<div class="side-object-page__top top-side-object">
+			<div class="top-side-object__img">
+				<img src="@img/object/side_img.png" alt="">
+			</div>
+			<div class="top-side-object__name">
+				<span>Агент по недвижимости</span>
+				<p>Александр Котов</p>
+			</div>
+			<a href="mailto:info@bonadomus.com" class="top-side-object__link">info@bonadomus.com</a>
+		</div>
+		<!-- При успешной отправке добавить класс _submited чтобы применились стили  -->
+		<form class="side-object-page__form form-side-object ">
+			<div class="form-side-object__body">
+				<div class="form-side-object__line _error">
+					<input type="text" name="" class="form-side-object__inp" placeholder="Ваше имя*">
+					<div class="form-side-object__error">Ошибка</div>
+				</div>
+				<div class="form-side-object__line">
+					<input type="tel" name="" class="form-side-object__inp" placeholder="Телефон">
+					<div class="form-side-object__error">Ошибка</div>
+				</div>
+				<div class="form-side-object__line">
+					<input type="email" name="" class="form-side-object__inp" placeholder="E-mail*">
+					<div class="form-side-object__error">Ошибка</div>
+				</div>
+				<div class="form-side-object__line">
+					<label for="form-side-object__message" class="form-side-object__label">
+						Задайте ваш вопрос или укажите удобное время, и я свяжусь с вами.
+					</label>
+					<textarea name="" id="form-side-object__message" data-autoheight data-autoheight-min="28"
+						placeholder="Написать сообщение" class="form-side-object__textarea"></textarea>
+				</div>
+			</div>
+			<div class="form-side-object__bottom">
+				<div class="checkbox">
+					<input id="policy_true" checked class="checkbox__input" type="checkbox" value="1">
+					<label for="policy_true" class="checkbox__label">
+						<span class="checkbox__text">
+							Нажимая на кнопку отправить, Вы соглашаетесь на обработку личных данных и согласны с <a href="">Политикой
+								конфиденциальности</a>
+						</span>
+					</label>
+				</div>
+				<div class="checkbox">
+					<input id="subscribe_false" checked class="checkbox__input" type="checkbox" value="2">
+					<label for="subscribe_false" class="checkbox__label">
+						<span class="checkbox__text">Подписаться на рассылку новых предложений</span>
+					</label>
+				</div>
+				<button type="button" class="form-side-object__button main-page__btn">Отправить</button>
+			</div>
+		</form>
+	</div>
+</div>

@@ -9,13 +9,18 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 [class*="_icon-"] {
-	&:before {
+	&:before,
+	&::after {
 		@extend %ic;
 		display: block;
 	}
 }
 
-._icon-arr_top_right:before {
+._icon-showmore_arr_bottom:before {
+	content: "\e913";
+	color: #92844a;
+}
+._icon-arr_top_right::after {
 	content: "\e912";
 }
 ._icon-select_arr:before {

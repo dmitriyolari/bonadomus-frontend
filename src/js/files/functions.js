@@ -439,8 +439,10 @@ export function menuInit() {
 				bodyLockToggle();
 				document.documentElement.classList.toggle("menu-open");
 			}
-			if (bodyLockStatus && !e.target.closest('.menu__body')) {
-				menuClose()
+			if (document.documentElement.classList.contains('menu-open')) {
+				if (bodyLockStatus && !e.target.closest('.menu__body') && !e.target.closest('#popup') && !e.target.closest('.lg-close')) {
+					menuClose()
+				}
 			}
 		});
 	};
@@ -670,7 +672,7 @@ export function customCursor(isShadowTrue) {
 export function FLS(message) {
 	setTimeout(() => {
 		if (window.FLS) {
-			console.log(message);
+			// console.log(message);
 		}
 	}, 0);
 }

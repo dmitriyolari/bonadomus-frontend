@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>not found</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230906120958">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+	<div class="circle-cursor circle-cursor--inner"></div>
+	<div class="circle-cursor circle-cursor--outer"></div>
+	<div class="wrapper wrapper-not-found">
+		<header class="wrapper-not-found__header">
+			<a href="index.html">
+				<img src="img/header/hd_logo.svg" alt="">
+			</a>
+		</header>
+		<div class="wrapper-not-found__body">
+			<div class="wrapper-not-found__info">
+				<div class="wrapper-not-found__title">
+					404. Страница не найдена
+				</div>
+				<div class="wrapper-not-found__subtitle">
+					Возможно, она была перемещена, или вы просто неверно
+					указали адрес страницы.
+				</div>
+				<a href="index.html" class="wrapper-not-found__link _icon-arr_top_right">
+					Перейти На главную
+				</a>
+			</div>
+			<div class="wrapper-not-found__img">
+				<img src="img/404/full_bg.png" alt="">
+			</div>
+		</div>
+		<div aria-hidden="true" class="popup popup-tel">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__top top-popup">
+						<div class="top-popup__left _icon-hd_tel"></div>
+						<div class="top-popup__logo">
+							<img src="img/popup/logo.svg" alt="">
+						</div>
+						<button data-close type="button" class="popup__close"></button>
+					</div>
+					<a href="tel:9718000321051" class="popup-tel__title">
+						+971 8000 32 10 51
+					</a>
+					<div class="popup-tel__links">
+						<a href="" class="popup-tel__link link-popup-tel">
+							<span class="link-popup-tel__top">
+								<span class="_icon-viber"></span>
+							</span>
+							<span class="link-popup-tel__label">
+								Viber
+							</span>
+						</a>
+						<a href="" class="popup-tel__link link-popup-tel">
+							<span class="link-popup-tel__top">
+								<span class="_icon-telegram"></span>
+							</span>
+							<span class="link-popup-tel__label">
+								Telegram
+							</span>
+						</a>
+						<a href="" class="popup-tel__link link-popup-tel">
+							<span class="link-popup-tel__top">
+								<span class="_icon-whatsapp"></span>
+							</span>
+							<span class="link-popup-tel__label">
+								Whatsapp
+							</span>
+						</a>
+					</div>
+
+					<div class="popup-tel__email">
+						info@bonadomus.com
+					</div>
+
+					<div class="popup-tel__bottom">
+						<div class="popup-tel__text">
+							Хотите мы перезвоним вам через 30 секунд
+						</div>
+						<a href="" class="popup-tel__btn">
+							Заказать звонок
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div aria-hidden="true" class="popup popup-lang">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__top top-popup">
+						<div class="top-popup__left _icon-lang"></div>
+						<div class="top-popup__logo">
+							<img src="img/popup/logo.svg" alt="">
+						</div>
+						<button data-close type="button" class="popup__close"></button>
+					</div>
+					<div class="popup-lang__body">
+						<div class="popup-lang__item">
+							<div class="popup-lang__title">Язык</div>
+							<div class="options">
+								<div class="options__item">
+									<input id="ru" class="options__input" checked type="radio" value="1" name="option-lang">
+									<label for="ru" class="options__label"><span class="options__text">ru</span></label>
+								</div>
+								<div class="options__item">
+									<input id="en" class="options__input" type="radio" value="2" name="option-lang">
+									<label for="en" class="options__label"><span class="options__text">en</span></label>
+								</div>
+								<div class="options__item">
+									<input id="ua" class="options__input" type="radio" value="3" name="option-lang">
+									<label for="ua" class="options__label"><span class="options__text">ua</span></label>
+								</div>
+							</div>
+						</div>
+						<div class="popup-lang__item">
+							<div class="popup-lang__title">Валюта</div>
+							<div class="options">
+								<div class="options__item">
+									<input id="EUR" class="options__input" checked type="radio" value="EUR" name="option-money">
+									<label for="EUR" class="options__label"><span class="options__text">EUR</span></label>
+								</div>
+								<div class="options__item">
+									<input id="USD" class="options__input" type="radio" value="USD" name="option-money">
+									<label for="USD" class="options__label"><span class="options__text">USD</span></label>
+								</div>
+								<div class="options__item">
+									<input id="RUB" class="options__input" type="radio" value="RUB" name="option-money">
+									<label for="RUB" class="options__label"><span class="options__text">RUB</span></label>
+								</div>
+								<div class="options__item">
+									<input id="GBP" class="options__input" type="radio" value="GBP" name="option-money">
+									<label for="GBP" class="options__label"><span class="options__text">GBP</span></label>
+								</div>
+							</div>
+						</div>
+						<div class="popup-lang__item">
+							<div class="popup-lang__title">Единицы измерения</div>
+							<div class="options options_square">
+								<div class="options__item">
+									<input id="m" class="options__input" checked type="radio" value="m" name="option-units">
+									<label for="m" class="options__label"><span class="options__text">Квадратные метры (м2)</span></label>
+								</div>
+								<div class="options__item">
+									<input id="ft" class="options__input" type="radio" value="ft" name="option-units">
+									<label for="ft" class="options__label"><span class="options__text">Квадратные футы (ft2)</span></label>
+								</div>
+							</div>
+						</div>
+						<button class="popup-lang__btn white-btn">Сохранить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div aria-hidden="true" class="popup popup-filter">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__top top-popup">
+						<div class="top-popup__left _icon-filter">
+							<span>Фильтр</span>
+						</div>
+						<div class="top-popup__logo">
+							<img src="img/popup/logo.svg" alt="">
+						</div>
+						<button data-close type="button" class="popup__close"></button>
+					</div>
+					<form action="" class="popup-filter__form form-filter-popup" data-simplebar>
+						<div class="form-filter-popup__body">
+							<div class="form-filter-popup__result">
+								Результат поиска: 0
+							</div>
+							<div class="popup-filter__info _icon-error">
+								<p>Уберите не самые приоритетные критерии поиска</p>
+							</div>
+							<div class="form-filter-popup__item">
+								<div class="form-filter-popup__title">Город:</div>
+								<div class="form-filter-popup__options options options_default">
+									<div class="options__item">
+										<input id="city_1" class="options__input" type="radio" value="1" name="option">
+										<label for="city_1" class="options__label"><span class="options__text">Дубай</span></label>
+									</div>
+									<div class="options__item">
+										<input id="city_2" class="options__input" type="radio" value="2" name="option">
+										<label for="city_2" class="options__label"><span class="options__text">Абу-Даби</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="form-filter-popup__item">
+								<div class="form-filter-popup__title">Тип недвижимости:</div>
+								<div class="form-filter-popup__select custom-select-filter _open">
+									<button type="button" class="custom-select-filter__title _icon-select_arr">Любой тип</button>
+									<div class="custom-select-filter__body">
+										<div class="custom-select-filter__content" data-simplebar>
+											<div class="custom-select-filter__item _selected">Квартиры</div>
+											<div class="custom-select-filter__item">Апартаменты</div>
+											<div class="custom-select-filter__item">Пентхаусы</div>
+											<div class="custom-select-filter__item _selected">Лофты</div>
+											<div class="custom-select-filter__item">Таунхаусы</div>
+											<div class="custom-select-filter__item _selected">Дома</div>
+											<div class="custom-select-filter__item">Апартаменты</div>
+											<div class="custom-select-filter__item">Пентхаусы</div>
+											<div class="custom-select-filter__item">Лофты</div>
+											<div class="custom-select-filter__item">Таунхаусы</div>
+										</div>
+									</div>
+									<div class="custom-select-filter__bottom bottom-custom-select">
+										<button type="button" class="bottom-custom-select__item">Квартиры</button>
+										<button type="button" class="bottom-custom-select__item">Лофты</button>
+										<button type="button" class="bottom-custom-select__item">Дома</button>
+									</div>
+								</div>
+							</div>
+							<div class="form-filter-popup__item">
+								<div class="form-filter-popup__title">Район:</div>
+								<div class="form-filter-popup__select custom-select-filter _open">
+									<button type="button" class="custom-select-filter__title _icon-select_arr">Любой район</button>
+									<div class="custom-select-filter__body">
+										<div class="custom-select-filter__content" data-simplebar>
+											<div class="custom-select-filter__item _selected">Al Barsha (23)</div>
+											<div class="custom-select-filter__item _selected">Al Kifaf (21)</div>
+											<div class="custom-select-filter__item _selected">Al Habtoor City (34)</div>
+										</div>
+									</div>
+									<div class="custom-select-filter__bottom bottom-custom-select">
+										<button type="button" class="bottom-custom-select__item">Al Barsha (23)</button>
+										<button type="button" class="bottom-custom-select__item">Al Kifaf (21)</button>
+										<button type="button" class="bottom-custom-select__item">Al Habtoor City (34)</button>
+									</div>
+								</div>
+							</div>
+							<div class="form-filter-popup__item">
+								<div class="form-filter-popup__title">Комнат:</div>
+								<div class="form-filter-popup__options options options_round">
+									<div class="options__item">
+										<input id="room_1" class="options__input" type="radio" value="1" name="rooms">
+										<label for="room_1" class="options__label"><span class="options__text">1</span></label>
+									</div>
+									<div class="options__item">
+										<input id="room_2" class="options__input" type="radio" value="2" name="rooms">
+										<label for="room_2" class="options__label"><span class="options__text">2</span></label>
+									</div>
+									<div class="options__item">
+										<input id="room_3" class="options__input" type="radio" value="3" name="rooms">
+										<label for="room_3" class="options__label"><span class="options__text">3</span></label>
+									</div>
+									<div class="options__item">
+										<input id="room_4" class="options__input" type="radio" value="4" name="rooms">
+										<label for="room_4" class="options__label"><span class="options__text">4</span></label>
+									</div>
+									<div class="options__item">
+										<input id="room_5" class="options__input" type="radio" value="5" name="rooms">
+										<label for="room_5" class="options__label"><span class="options__text">5</span></label>
+									</div>
+									<div class="options__item">
+										<input id="room_6" class="options__input" type="radio" value="6" name="rooms">
+										<label for="room_6" class="options__label"><span class="options__text">6</span></label>
+									</div>
+									<div class="options__item">
+										<input id="room_7" class="options__input" type="radio" value="7" name="rooms">
+										<label for="room_7" class="options__label"><span class="options__text">7</span></label>
+									</div>
+									<div class="options__item">
+										<input id="room_8" class="options__input" type="radio" value="8" name="rooms">
+										<label for="room_8" class="options__label"><span class="options__text">8</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="form-filter-popup__item">
+								<div class="form-filter-popup__title">Ванн:</div>
+								<div class="form-filter-popup__options options options_round">
+									<div class="options__item">
+										<input id="bathroom_1" class="options__input" type="radio" value="1" name="bathrooms">
+										<label for="bathroom_1" class="options__label"><span class="options__text">1</span></label>
+									</div>
+									<div class="options__item">
+										<input id="bathroom_2" class="options__input" type="radio" value="2" name="bathrooms">
+										<label for="bathroom_2" class="options__label"><span class="options__text">2</span></label>
+									</div>
+									<div class="options__item">
+										<input id="bathroom_3" class="options__input" type="radio" value="3" name="bathrooms">
+										<label for="bathroom_3" class="options__label"><span class="options__text">3</span></label>
+									</div>
+									<div class="options__item">
+										<input id="bathroom_4" class="options__input" type="radio" value="4" name="bathrooms">
+										<label for="bathroom_4" class="options__label"><span class="options__text">4</span></label>
+									</div>
+									<div class="options__item">
+										<input id="bathroom_5" class="options__input" type="radio" value="5" name="bathrooms">
+										<label for="bathroom_5" class="options__label"><span class="options__text">5</span></label>
+									</div>
+									<div class="options__item">
+										<input id="bathroom_6" class="options__input" type="radio" value="6" name="bathrooms">
+										<label for="bathroom_6" class="options__label"><span class="options__text">6</span></label>
+									</div>
+									<div class="options__item">
+										<input id="bathroom_7" class="options__input" type="radio" value="7" name="bathrooms">
+										<label for="bathroom_7" class="options__label"><span class="options__text">7</span></label>
+									</div>
+									<div class="options__item">
+										<input id="bathroom_8" class="options__input" type="radio" value="8" name="bathrooms">
+										<label for="bathroom_8" class="options__label"><span class="options__text">8</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="form-filter-popup__item">
+								<div class="form-filter-popup__title">Цена:</div>
+								<div class="form-filter-popup__price price-form-filter">
+									<div class="price-form-filter__top">
+										<div class="price-form-filter__left">
+											<div class="price-form-filter__wp">
+												<input id="price-start" type="number" name="form[]" class="price-form-filter__input input-number-0">
+											</div>
+											<div class="price-form-filter__wp">
+												<input id="price-end" type="number" name="form[]" class="price-form-filter__input input-number-1">
+											</div>
+										</div>
+										<div class="price-form-filter__currency currency-price-filter">EUR</div>
+									</div>
+									<div class="price-form-filter__range_wp">
+										<div class="price-form-filter__range"></div>
+									</div>
+								</div>
+							</div>
+							<div class="form-filter-popup__item">
+								<div class="form-filter-popup__title">Статус завершения:</div>
+								<div class="checkbox">
+									<input id="c_true" checked class="checkbox__input" type="checkbox" value="1">
+									<label for="c_true" class="checkbox__label"><span class="checkbox__text">Завершен</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_false" checked class="checkbox__input" type="checkbox" value="1">
+									<label for="c_false" class="checkbox__label"><span class="checkbox__text">Еще не завершен</span></label>
+								</div>
+							</div>
+							<div class="form-filter-popup__item">
+								<div class="form-filter-popup__title">Застройщик:</div>
+								<div class="form-filter-popup__select custom-select-filter _open">
+									<button type="button" class="custom-select-filter__title _icon-select_arr">Любой застройщик</button>
+									<div class="custom-select-filter__body">
+										<div class="custom-select-filter__content" data-simplebar>
+											<div class="custom-select-filter__item _selected">Квартиры</div>
+											<div class="custom-select-filter__item">Апартаменты</div>
+										</div>
+									</div>
+									<div class="custom-select-filter__bottom bottom-custom-select _hidden">
+									</div>
+								</div>
+							</div>
+							<div class="form-filter-popup__item">
+								<div class="form-filter-popup__title">Комплекс:</div>
+								<div class="form-filter-popup__select custom-select-filter _open">
+									<button type="button" class="custom-select-filter__title _icon-select_arr">Любой комплекс</button>
+									<div class="custom-select-filter__body">
+										<div class="custom-select-filter__content" data-simplebar>
+											<div class="custom-select-filter__item _selected">Квартиры</div>
+											<div class="custom-select-filter__item">Апартаменты</div>
+										</div>
+									</div>
+									<div class="custom-select-filter__bottom bottom-custom-select _hidden">
+									</div>
+								</div>
+							</div>
+							<div class="form-filter-popup__item">
+								<div class="form-filter-popup__title">Сортировка:</div>
+								<div class="form-filter-popup__options options options_default option-sorting">
+									<div class="option-sorting__col">
+										<div class="options__item">
+											<input id="sorting_1" class="options__input" type="radio" value="Популярные" name="sorting">
+											<label for="sorting_1" class="options__label"><span class="options__text">Популярные</span></label>
+										</div>
+										<div class="options__item">
+											<input id="sorting_3" class="options__input" type="radio" value="Популярные" name="sorting">
+											<label for="sorting_3" class="options__label"><span class="options__text">Новые</span></label>
+										</div>
+									</div>
+									<div class="option-sorting__col">
+										<div class="options__item">
+											<input id="sorting_2" class="options__input" type="radio" value="Популярные" name="sorting">
+											<label for="sorting_2" class="options__label"><span class="options__text">Самая низкая
+													цена</span></label>
+										</div>
+										<div class="options__item">
+											<input id="sorting_4" class="options__input" type="radio" value="Популярные" name="sorting">
+											<label for="sorting_4" class="options__label"><span class="options__text">Самая высокая
+													цена</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-filter-popup__item">
+								<div class="form-filter-popup__title">Поиск по ID</div>
+								<div class="form-filter-popup__search search-form-filter">
+									<input type="text" placeholder="ID 4567" class="search-form-filter__inp">
+									<button type="button " class="search-form-filter__btn _icon-search"></button>
+								</div>
+							</div>
+						</div>
+					</form>
+					<div class="form-filter-popup__footer footer-form-filter">
+						<button class="footer-form-filter__btn footer-form-filter__btn_gold">
+							Сбросить фильтр
+						</button>
+						<button class="footer-form-filter__btn footer-form-filter__btn_save">
+							Сохранить
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div aria-hidden="true" class="popup popup-form popup-form_consultation">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__top top-popup">
+						<div class="top-popup__left ">
+							Быстрая консультация
+						</div>
+						<button data-close type="button" class="popup__close"></button>
+					</div>
+					<div class="popup-form__top">
+						<div class="popup-form__title">Получите ответы на все вопросы</div>
+						<div class="popup-form__agent agent-form-popup">
+							<div class="agent-form-popup__left">
+								<div class="agent-form-popup__img">
+									<img src="img/popup/agent.png" alt="">
+								</div>
+							</div>
+							<div class="agent-form-popup__right">
+								<div class="agent-form-popup__name">Александр Котов</div>
+								<div class="agent-form-popup__label">Агент по недвижимости</div>
+							</div>
+						</div>
+					</div>
+					<form action="" class="popup-form__body body-popup-form">
+						<div class="body-popup-form__inputs">
+							<input type="text" placeholder="Ваше имя" class="body-popup-form__inp">
+							<input type="tel" placeholder="Телефон" class="body-popup-form__inp">
+							<input type="email" placeholder="E-mail" class="body-popup-form__inp">
+							<div class="body-popup-form__message message-body-popup">
+								<div class="message-body-popup__title">
+									Сообщение:
+								</div>
+								<textarea name="" id="" class="message-body-popup__textarea" data-autoheight data-autoheight-min="104">
+Интересуюсь покупкой недвижимости в ОАЭ. Напишите удобное время, и наш агент свяжется с вами. Опишите ваши пожелания: количество комнат и санузлов, площадь, цена, предпочтения по инфраструктуре и др.</textarea>
+
+							</div>
+						</div>
+						<div class="body-popup-form__bottom">
+							<div class="checkbox">
+								<input id="policy-consultation" checked class="checkbox__input" type="checkbox" value="1">
+								<label for="policy-consultation" class="checkbox__label">
+									<span class="checkbox__text">
+										Нажимая на кнопку отправить, Вы соглашаетесь на обработку личных данных и согласны с <a href="">Политикой
+											конфиденциальности</a>
+									</span>
+								</label>
+							</div>
+							<div class="checkbox">
+								<input id="subscribe-consultation" checked class="checkbox__input" type="checkbox" value="2">
+								<label for="subscribe-consultation" class="checkbox__label">
+									<span class="checkbox__text">Подписаться на рассылку новых предложений</span>
+								</label>
+							</div>
+						</div>
+						<button type="button" class="body-popup-form__button white-btn">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div aria-hidden="true" class="popup popup-form popup-form_more">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__top top-popup">
+						<div class="top-popup__left ">
+							Узнать больше
+						</div>
+						<button data-close type="button" class="popup__close"></button>
+					</div>
+					<div class="popup-form__top">
+						<div class="popup-form__title">Получите ответы на все вопросы</div>
+						<div class="popup-form__agent agent-form-popup">
+							<div class="agent-form-popup__left">
+								<div class="agent-form-popup__img">
+									<img src="img/popup/agent.png" alt="">
+								</div>
+							</div>
+							<div class="agent-form-popup__right">
+								<div class="agent-form-popup__name">Александр Котов</div>
+								<div class="agent-form-popup__label">Агент по недвижимости</div>
+							</div>
+						</div>
+					</div>
+					<form action="" class="popup-form__body body-popup-form">
+						<div class="body-popup-form__inputs">
+							<input type="text" placeholder="Ваше имя" class="body-popup-form__inp">
+							<input type="tel" placeholder="Телефон" class="body-popup-form__inp">
+							<input type="email" placeholder="E-mail" class="body-popup-form__inp">
+							<div class="body-popup-form__message message-body-popup">
+								<div class="message-body-popup__title">
+									Сообщение:
+								</div>
+								<textarea name="" id="" class="message-body-popup__textarea" data-autoheight data-autoheight-min="81">
+Мне понравилось это предложение, хочу узнать больше. Напишите удобное время, и наш агент свяжется с вами.
+Можете написать ваши вопросы.</textarea>
+
+							</div>
+						</div>
+						<div class="body-popup-form__bottom">
+							<div class="checkbox">
+								<input id="popup-policy_true" checked class="checkbox__input" type="checkbox" value="1">
+								<label for="popup-policy_true" class="checkbox__label">
+									<span class="checkbox__text">
+										Нажимая на кнопку отправить, Вы соглашаетесь на обработку личных данных и согласны с <a href="">Политикой
+											конфиденциальности</a>
+									</span>
+								</label>
+							</div>
+							<div class="checkbox">
+								<input id="popup-subscribe_false" checked class="checkbox__input" type="checkbox" value="2">
+								<label for="popup-subscribe_false" class="checkbox__label">
+									<span class="checkbox__text">Подписаться на рассылку новых предложений</span>
+								</label>
+							</div>
+						</div>
+						<button type="button" class="body-popup-form__button white-btn">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div aria-hidden="true" class="popup popup-form popup-form_video">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__top top-popup">
+						<div class="top-popup__left ">
+							Заказать видео осмотр
+						</div>
+						<button data-close type="button" class="popup__close"></button>
+					</div>
+					<div class="popup-form__top">
+						<div class="popup-form__title">Получите ответы на все вопросы</div>
+						<div class="popup-form__agent agent-form-popup">
+							<div class="agent-form-popup__left">
+								<div class="agent-form-popup__img">
+									<img src="img/popup/agent.png" alt="">
+								</div>
+							</div>
+							<div class="agent-form-popup__right">
+								<div class="agent-form-popup__name">Александр Котов</div>
+								<div class="agent-form-popup__label">Агент по недвижимости</div>
+							</div>
+						</div>
+					</div>
+					<form action="" class="popup-form__body body-popup-form">
+						<div class="body-popup-form__inputs">
+							<input type="text" placeholder="Ваше имя" class="body-popup-form__inp">
+							<input type="tel" placeholder="Телефон" class="body-popup-form__inp">
+							<input type="email" placeholder="E-mail" class="body-popup-form__inp">
+							<div class="body-popup-form__message message-body-popup">
+								<div class="message-body-popup__title">
+									Сообщение:
+								</div>
+								<textarea name="" id="" class="message-body-popup__textarea" data-autoheight data-autoheight-min="58">
+Хочу заказать видео осмотр этого объекта. Напишите удобное время, и наш агент свяжется с вами. </textarea>
+
+							</div>
+						</div>
+						<div class="body-popup-form__bottom">
+							<div class="checkbox">
+								<input id="popup-policy_true" checked class="checkbox__input" type="checkbox" value="1">
+								<label for="popup-policy_true" class="checkbox__label">
+									<span class="checkbox__text">
+										Нажимая на кнопку отправить, Вы соглашаетесь на обработку личных данных и согласны с <a href="">Политикой
+											конфиденциальности</a>
+									</span>
+								</label>
+							</div>
+							<div class="checkbox">
+								<input id="popup-subscribe_false" checked class="checkbox__input" type="checkbox" value="2">
+								<label for="popup-subscribe_false" class="checkbox__label">
+									<span class="checkbox__text">Подписаться на рассылку новых предложений</span>
+								</label>
+							</div>
+						</div>
+						<button type="button" class="body-popup-form__button white-btn">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div aria-hidden="true" class="popup popup-images">
+			<div class="popup__wrapper">
+				<div class="popup-images__top">
+					<button data-close type="button" class="popup__close _icon-slider_arr-left"></button>
+
+					<div class="popup-images__actions actions-images-popup">
+						<button type="button" class="actions-images-popup__share">Поделиться</button>
+						<button type="button" class="actions-images-popup__favorite"></button>
+					</div>
+				</div>
+				<div class="popup__content">
+					<div class="popup-images__row">
+						<a href="" class="popup-images__item">
+							<img src="img/images-popup/1.png" alt="">
+						</a>
+						<a href="" class="popup-images__item">
+							<img src="img/images-popup/2.png" alt="">
+						</a>
+						<a href="" class="popup-images__item">
+							<img src="img/images-popup/3.png" alt="">
+						</a>
+						<a href="" class="popup-images__item">
+							<img src="img/images-popup/4.png" alt="">
+						</a>
+						<a href="" class="popup-images__item">
+							<img src="img/images-popup/5.png" alt="">
+						</a>
+						<a href="" class="popup-images__item">
+							<img src="img/images-popup/6.png" alt="">
+						</a>
+						<a href="" class="popup-images__item">
+							<img src="img/images-popup/7.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div aria-hidden="true" class="popup popup-select-area">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__top top-popup">
+						<div class="top-popup__left">Выберите район(-ы)</div>
+						<button data-close type="button" class="popup__close"></button>
+					</div>
+					<div class="popup-select-area__content" data-simplebar>
+						<div class="checkbox">
+							<input id="area_all" checked class="checkbox__input" type="checkbox" value="1" name="">
+							<label for="area_all" class="checkbox__label"><span class="checkbox__text">
+									Все районы
+								</span></label>
+						</div>
+						<div class="checkbox">
+							<input id="area_1" class="checkbox__input" type="checkbox" value="1" name="">
+							<label for="area_1" class="checkbox__label"><span class="checkbox__text">
+									Бизнес Бей (Business Bay)
+								</span></label>
+						</div>
+						<div class="checkbox">
+							<input id="area_2" class="checkbox__input" type="checkbox" value="1" name="">
+							<label for="area_2" class="checkbox__label"><span class="checkbox__text">
+									Даунтаун Дубай (Downtown Dubai)
+								</span></label>
+						</div>
+						<div class="checkbox">
+							<input id="area_3" class="checkbox__input" type="checkbox" value="1" name="">
+							<label for="area_3" class="checkbox__label"><span class="checkbox__text">
+									Дубай Марина (Dubai Marina)
+								</span></label>
+						</div>
+						<div class="checkbox">
+							<input id="area_4" class="checkbox__input" type="checkbox" value="1" name="">
+							<label for="area_4" class="checkbox__label"><span class="checkbox__text">
+									Пальма Джумейра (Palm Jumeirah)
+								</span></label>
+						</div>
+						<div class="checkbox">
+							<input id="area_5" class="checkbox__input" type="checkbox" value="1" name="">
+							<label for="area_5" class="checkbox__label"><span class="checkbox__text">
+									Джумейра Вилладж Серкл (Jumeirah Village Circle)
+								</span></label>
+						</div>
+						<div class="checkbox">
+							<input id="area_6" class="checkbox__input" type="checkbox" value="1" name="">
+							<label for="area_6" class="checkbox__label"><span class="checkbox__text">
+									Дубай Хиллс Эстейт (Dubai Hills Estate)
+								</span></label>
+						</div>
+						<div class="checkbox">
+							<input id="area_7" class="checkbox__input" type="checkbox" value="1" name="">
+							<label for="area_7" class="checkbox__label"><span class="checkbox__text">
+									Dubai Creek Harbour (The Lagoons)
+								</span></label>
+						</div>
+						<div class="checkbox">
+							<input id="area_8" class="checkbox__input" type="checkbox" value="1" name="">
+							<label for="area_8" class="checkbox__label"><span class="checkbox__text">
+									Dubai Harbour
+								</span></label>
+						</div>
+						<div class="checkbox">
+							<input id="area_9" class="checkbox__input" type="checkbox" value="1" name="">
+							<label for="area_9" class="checkbox__label"><span class="checkbox__text">
+									Джумейра Бич Резиденс (Jumeirah Beach Residence)
+								</span></label>
+						</div>
+						<div class="checkbox">
+							<input id="area_10" class="checkbox__input" type="checkbox" value="1" name="">
+							<label for="area_10" class="checkbox__label"><span class="checkbox__text">
+									Джумейра Лейк Тауэрс (Jumeirah Lake Towers)
+								</span></label>
+						</div>
+						<div class="checkbox">
+							<input id="area_11" class="checkbox__input" type="checkbox" value="1" name="">
+							<label for="area_11" class="checkbox__label"><span class="checkbox__text">
+									Дубай Лэнд (Dubai Land)
+								</span></label>
+						</div>
+						<div class="checkbox">
+							<input id="area_12" class="checkbox__input" type="checkbox" value="1" name="">
+							<label for="area_12" class="checkbox__label"><span class="checkbox__text">
+									Dubai International Financial Center (DIFC)
+								</span></label>
+						</div>
+						<div class="checkbox">
+							<input id="area_13" class="checkbox__input" type="checkbox" value="1" name="">
+							<label for="area_13" class="checkbox__label"><span class="checkbox__text">
+									Крик Бич (Creek Beach)
+								</span></label>
+						</div>
+						</diiv>
+					</div>
+					<div class="popup-select-area__bottom">
+						<button type="button" class="popup-select-area__reset">Очистить все</button>
+						<button type="button" class="popup-select-area__submit white-gold-btn">Выбрать район(ы)</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ================== ГАЛЕРЕЯ - скрыл пока не добавили js чтобы  ============== -->
+		<div class="gallery" style="display: none;">
+			<div class="gallery__wrapper">
+				<div class="gallery__content">
+					<div class="gallery__top">
+						<button type="button" class="gallery__close"><span>Закрыть</span></button>
+						<div class="gallery__actions actions-gallery">
+							<button type="button" class="actions-gallery__share">Поделиться</button>
+							<button type="button" class="actions-gallery__favorite"></button>
+						</div>
+					</div>
+					<div class="gallery-slider-wp">
+						<div class="gallery-slider swiper">
+							<div class="gallery-slider__wrapper swiper-wrapper">
+								<div class="gallery-slider__slide swiper-slide">
+									<img src="img/images-popup/1.png" alt="">
+								</div>
+								<div class="gallery-slider__slide swiper-slide">
+									<img src="img/images-popup/4.png" alt="">
+								</div>
+								<div class="gallery-slider__slide swiper-slide">
+									<img src="img/images-popup/7.png" alt="">
+								</div>
+							</div>
+						</div>
+						<button type="button" class="gallery-button gallery-button_prev _icon-slider_arr-left"></button>
+						<button type="button" class="gallery-button gallery-button_next _icon-slider_arr-right"></button>
+					</div>
+					<div class="gallery-bottom">
+						<div class="gallery-fraction" data-da=".gallery__top, 768, 1">
+							<div class="gallery-fraction__current">1</div>
+							<div class="gallery-fraction__sepparator">/</div>
+							<div class="gallery-fraction__total">1</div>
+						</div>
+						<div class="gallery-pagination"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?_v=20230906120958"></script>
+	<script src="js/app.min.js?_v=20230906120958"></script>
+</body>
+
+</html>
