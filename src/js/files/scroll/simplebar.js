@@ -18,9 +18,9 @@ if (document.querySelectorAll('[data-simplebar]').length) {
 let windowWidth = window.innerWidth;
 let formFilter = document.querySelector('.popup-filter__form');
 let customSelect = document.querySelector('.custom-select-filter__content');
+let filterSelect = document.querySelector('.select-filter-wrap');
 
 if (windowWidth < 768 && formFilter) {
-	console.log(3);
 	formFilter.removeAttribute('data-simplebar')
 } else {
 	new SimpleBar(formFilter, {
@@ -30,6 +30,12 @@ if (windowWidth < 768 && formFilter) {
 //===============================================================================================
 if (customSelect) {
 	new SimpleBar(customSelect, {
+		autoHide: false
+	});
+}
+//===============================================================================================
+if (filterSelect) {
+	new SimpleBar(filterSelect, {
 		autoHide: false
 	});
 }

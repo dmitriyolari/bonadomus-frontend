@@ -1,4 +1,4 @@
-<header class="header header-mini">
+<header class="header">
 	<div class="header__container">
 		<div class="header__left">
 			<div class="header__menu menu">
@@ -11,12 +11,12 @@
 							<img src="@img/popup/logo.svg" alt="">
 						</div>
 						<ul class="menu__list">
-							<!-- <li class="menu__item">
-								<a href="" class="menu__link">Главная</a>
-							</li> -->
 							<li class="menu__item">
-								<a href="catalog.html" class="menu__link" data-goto=".hits-home">Недвижимость</a>
-								<!-- <span class="menu__arrow arrow _icon-hd_arr-bottom"></span>
+								<a href="" class="menu__link">Главная</a>
+							</li>
+							<li class="menu__item">
+								<a href="catalog.html" class="menu__link">Недвижимость</a>
+								<span class="menu__arrow arrow _icon-hd_arr-bottom"></span>
 								<ul class="sub-menu__list">
 									<li>
 										<a href="" class="sub-menu__link">Квартиры</a>
@@ -42,17 +42,17 @@
 									<li>
 										<a href="" class="sub-menu__link">Дуплексы</a>
 									</li>
-								</ul> -->
+								</ul>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link" data-goto=".district-home-page">Районы</a>
+								<a href="district.html" class="menu__link">Районы</a>
 							</li>
-							<!-- <li class="menu__item">
+							<li class="menu__item">
 								<a href="" class="menu__link">комплексы</a>
-							</li> -->
-							<!-- <li class="menu__item">
+							</li>
+							<li class="menu__item">
 								<a href="" class="menu__link">Новостройки</a>
-							</li> -->
+							</li>
 							<li class="menu__item">
 								<a href="about.html" class="menu__link">О нас</a>
 							</li>
@@ -60,21 +60,22 @@
 								<a href="" class="menu__link" data-popup=".popup-tel">Контакты </a>
 							</li>
 						</ul>
-						<!-- <div class="menu__bottom bottom-menu">
-							<a href="" class="bottom-menu__link white-btn">Хочу продать</a>
-							<a href="" class="bottom-menu__link buy-btn">Хочу купить</a>
-						</div> -->
+						<div class="menu__bottom bottom-menu">
+							<button type="button" data-popup=".popup-form_sell" class="bottom-menu__link white-btn">Хочу
+								продать</button>
+							<button type="button" data-popup=".popup-form_consultation" class="bottom-menu__link buy-btn">Хочу
+								купить</button>
+						</div>
 					</div>
 				</nav>
 			</div>
-			<!-- <a href="" data-da=".mobile-header, 767, 1" class="actions-header__item header-favorite _icon-hd_favorite"></a>
-			<button class="header__filter actions-header__item _icon-filter" data-popup=".popup-filter"></button> -->
+			<button class="header__filter actions-header__item _icon-filter" data-popup=".popup-filter"></button>
 		</div>
 		<div class="header-top header-top_left">
 			<ul class="header-top__list">
 				<li>
-					<a href="catalog.html" class="header-top__link" data-goto=".hits-home">Недвижимость</a>
-					<!-- <span class="menu__arrow arrow _icon-hd_arr-bottom"></span>
+					<a href="catalog.html" class="header-top__link">Недвижимость</a>
+					<span class="menu__arrow arrow _icon-hd_arr-bottom"></span>
 					<span class="sub-header-top__wrapper">
 						<ul class="sub-header-top__list">
 							<li><a href="" class="sub-header-top__link">Квартиры</a></li>
@@ -86,14 +87,14 @@
 							<li><a href="" class="sub-header-top__link">Виллы</a></li>
 							<li><a href="" class="sub-header-top__link">Дуплексы</a></li>
 						</ul>
-					</span> -->
+					</span>
 				</li>
 				<li>
-					<a href="" data-goto=".district-home-page" class="header-top__link">Районы</a>
+					<a href="" class="header-top__link">Районы</a>
 				</li>
-				<!-- <li>
+				<li>
 					<a href="" class="header-top__link">комплексы</a>
-				</li> -->
+				</li>
 			</ul>
 		</div>
 		<a href="index.html" class="header__logo">
@@ -101,9 +102,9 @@
 		</a>
 		<div class="header-top header-top_right">
 			<ul class="header-top__list">
-				<!-- <li>
+				<li>
 					<a href="" class="header-top__link">новостройки</a>
-				</li> -->
+				</li>
 				<li>
 					<a href="about.html" class="header-top__link">О нас</a>
 				</li>
@@ -113,15 +114,17 @@
 			</ul>
 		</div>
 		<div class="header__actions actions-header">
-
 			<button class="actions-header__item header-tel _icon-hd_tel" data-popup=".popup-tel"></button>
-			<!-- <button class="header__lang" data-popup=".popup-lang">
+			<button class="header__lang" data-popup=".popup-lang">
 				<img src="@img/icons/hd_lang.svg" alt="">
 			</button>
-			<button class="actions-header__item header-user _icon-hd_user" data-da=".mobile-header, 767, 2"></button> -->
 		</div>
 	</div>
-	<!-- <div class="header__mobile mobile-header">
-
-	</div> -->
+	<div class="header__mobile mobile-header">
+		<a href="favorite.html" data-da=".header__left, 767, 1"
+			class="actions-header__item header-favorite _icon-hd_favorite">
+			<span>10</span>
+		</a>
+		<button class="actions-header__item header-user _icon-hd_user" data-da=".actions-header, 767, 2"></button>
+	</div>
 </header>

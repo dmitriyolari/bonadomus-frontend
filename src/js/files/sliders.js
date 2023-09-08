@@ -297,6 +297,59 @@ function initSliders() {
 			}
 		});
 	}
+	if (document.querySelector('.top-catalog-page__slider')) { // Вказуємо склас потрібного слайдера
+		// Створюємо слайдер
+		new Swiper('.top-catalog-page__slider', { // Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			modules: [Navigation, FreeMode],
+			observer: true,
+			observeParents: true,
+			speed: 800,
+			spaceBetween: 10,
+			watchOverflow: true,
+			freeMode: true,
+			slidesPerView: "auto",
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			// Ефекти
+			// effect: 'fade',
+			/*
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Брейкпоінти
+			breakpoints: {
+				768: {
+					// Кнопки "вліво/вправо"
+					navigation: {
+						prevEl: '.catalog-button_prev',
+						nextEl: '.catalog-button_next',
+					},
+				}
+			},
+
+			// Події
+			on: {
+
+			}
+		});
+	}
 	if (document.querySelector('.object-features__slider') && windowWidth < 768) { // Вказуємо склас потрібного слайдера
 		// Створюємо слайдер
 		new Swiper('.object-features__slider', { // Вказуємо склас потрібного слайдера
@@ -551,6 +604,71 @@ function initSliders() {
 			}
 		});
 	}
+	if (document.querySelector('.reviews__slider')) { // Вказуємо склас потрібного слайдера
+		// Створюємо слайдер
+		new Swiper('.reviews__slider', { // Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			modules: [Navigation],
+			observer: true,
+			observeParents: true,
+			speed: 800,
+			watchOverflow: true,
+			//autoHeight: true,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+
+			// Ефекти
+			// effect: 'fade',
+			/*
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		*/
+
+			// Пагінація
+
+			// pagination: {
+			// 	el: '.swiper-pagination',
+			// },
+
+			// Кнопки "вліво/вправо"
+			navigation: {
+				prevEl: '.reviews-swiper_prev',
+				nextEl: '.reviews-swiper_next',
+			},
+
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Брейкпоінти
+			breakpoints: {
+				375: {
+					spaceBetween: 0,
+					slidesPerView: 1,
+				},
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 30,
+				}
+			},
+
+			// Події
+			on: {
+
+			}
+		});
+	}
 }
 // Скролл на базі слайдера (за класом swiper scroll для оболонки слайдера)
 function initSlidersScroll() {
@@ -581,9 +699,9 @@ function initSlidersScroll() {
 	}
 }
 
-window.addEventListener("load", function (e) {
+initSliders();
+window.addEventListener("DOMContentLoaded", function (e) {
 	// Запуск ініціалізації слайдерів
-	initSliders();
 	// Запуск ініціалізації скролла на базі слайдера (за класом swiper_scroll)
 	//initSlidersScroll();
 });

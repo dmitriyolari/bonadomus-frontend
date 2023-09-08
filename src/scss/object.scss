@@ -123,9 +123,17 @@
 			grid-row: span 2;
 		}
 		position: relative;
-		padding: 0px 0px 77% 0px;
-		@media (min-width: $mobile) {
-			padding: 0px 0px 74% 0px;
+		padding: 0px 0px 134% 0px;
+		&::after {
+			content: "";
+			position: absolute;
+			z-index: 2;
+			width: 100%;
+			height: 100%;
+			top: 40%;
+			left: 0;
+			pointer-events: none;
+			background: linear-gradient(1deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
 		}
 		img {
 			object-fit: cover;
@@ -135,8 +143,171 @@
 			top: 0;
 			left: 0;
 		}
+		@media (min-width: $mobile) {
+			&::after {
+				display: none;
+			}
+			padding: 0px 0px 74% 0px;
+		}
 	}
 }
+.images-top-object {
+	color: #fff;
+	position: relative;
+	// .images-top-object__state
+
+	&__state {
+		position: absolute;
+		z-index: 3;
+		top: 24px;
+		left: 17px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 14px;
+		@media (min-width: $mobile) {
+			top: 32px;
+			left: 32px;
+		}
+
+		border-radius: 32px;
+		background: #192b3f;
+
+		font-size: 14px;
+		font-weight: 400;
+		line-height: normal;
+		text-transform: uppercase;
+	}
+
+	// .images-top-object__bottom
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		position: absolute;
+		z-index: 3;
+		bottom: 65px;
+		left: 0;
+		width: 100%;
+		padding: 0 17px;
+		@media (min-width: $mobile) {
+			padding: 0 32px;
+			bottom: 32px;
+		}
+	}
+
+	// .images-top-object__col
+
+	&__col {
+		display: flex;
+		gap: 16px;
+		@media (max-width: $mobile) {
+			width: 100%;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+			&_right {
+				display: none;
+			}
+		}
+	}
+
+	// .images-top-object__favorite
+
+	&__favorite {
+		flex: 0 0 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #192b3f;
+		border-radius: 50%;
+
+		@media (any-hover: hover) {
+			&:hover {
+				&::before {
+					background: url("@img/card/favorite-hover.svg") center center / contain no-repeat;
+				}
+			}
+		}
+		&::before {
+			content: "";
+			flex: 0 0 25px;
+			height: 25px;
+			transition: all 0.3s ease 0s;
+			background: url("@img/icons/hd_favorite.svg") center center / contain no-repeat;
+		}
+
+		&.active {
+			&::before {
+				background: url("@img/card/favorite-active.svg") center center / contain no-repeat;
+			}
+		}
+	}
+
+	// .images-top-object__share
+
+	&__share {
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				background: #2d3f53;
+			}
+		}
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		padding: 0 26px;
+
+		border-radius: 32px;
+		background: #192b3f;
+
+		font-size: 14px;
+		font-weight: 400;
+		line-height: normal;
+		text-transform: uppercase;
+
+		&::after {
+			content: "";
+			width: 24px;
+			height: 24px;
+			background: url("@img/images-popup/share_white.svg") center center no-repeat;
+		}
+	}
+
+	// .images-top-object__show
+
+	&__show {
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				background: #2d3f53;
+			}
+		}
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		padding: 0 26px;
+
+		border-radius: 32px;
+		background: #192b3f;
+
+		font-size: 14px;
+		font-weight: 400;
+		line-height: normal;
+		text-transform: uppercase;
+
+		&::after {
+			content: "";
+			width: 24px;
+			height: 24px;
+			background: url("@img/object/show-btn.svg") center center no-repeat;
+		}
+	}
+}
+
 //===============================================================================================
 .object-main-info {
 	// .object-main-info__title
@@ -1303,7 +1474,7 @@
 		white-space: nowrap;
 		overflow-x: auto;
 		overflow-y: hidden;
-		padding: 0 17px 15px;
+		padding: 0 17px 8px;
 		margin: 0 -17px -15px;
 		gap: 10px;
 		&:not(:last-child) {
@@ -1355,7 +1526,7 @@
 }
 //===============================================================================================
 .form-side-object input:-webkit-autofill,
-input:-webkit-autofill:focus {
+.form-side-object input:-webkit-autofill:focus {
 	-webkit-box-shadow: 0 0 0 1000px #f8f8f8 inset;
 	box-shadow: 0 0 0 1000px #f8f8f8 inset;
 	-webkit-text-fill-color: #242424;

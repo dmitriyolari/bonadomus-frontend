@@ -440,7 +440,7 @@ export function menuInit() {
 				document.documentElement.classList.toggle("menu-open");
 			}
 			if (document.documentElement.classList.contains('menu-open')) {
-				if (bodyLockStatus && !e.target.closest('.menu__body') && !e.target.closest('#popup') && !e.target.closest('.lg-close')) {
+				if (bodyLockStatus && !e.target.closest('.menu__body') && !e.target.closest('.popup') && !e.target.closest('.lg-close')) {
 					menuClose()
 				}
 			}

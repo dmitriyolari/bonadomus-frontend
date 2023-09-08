@@ -85,6 +85,7 @@ function subtitleChange() {
 	}
 }
 window.addEventListener('load', function () {
+	document.documentElement.classList.remove('header_hidden')
 	subtitleChange();
 	let sidebar;
 	let side = document.querySelector('.side-object-page');
@@ -99,7 +100,7 @@ window.addEventListener('load', function () {
 				bottomSpacing: 0,
 				minWidth: 991,
 			});
-			sidebar.updateSticky()
+			sidebar.updateSticky();
 		}
 	}
 })
@@ -134,6 +135,22 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	onScrollHeader()
+
+	let videoIframes = document.querySelectorAll('.review-item__video');
+
+	for (let index = 0; index < videoIframes.length; index++) {
+		const iframe = videoIframes[index];
+
+
+		var playVideoButton = iframe.querySelector('.video-custom-poster');
+
+		playVideoButton.addEventListener('click', function (ev) {
+			var video = iframe.querySelector('.iframe-id');
+
+			video.src += '&autoplay=1';
+			ev.preventDefault();
+		});
+	}
 });
 //===============================================================================================
 if (!isMobile.any() && document.querySelector('.circle-cursor--outer')) {
@@ -207,3 +224,10 @@ if (!isMobile.any() && document.querySelector('.circle-cursor--outer')) {
 
 	const cursorAnim = new GlowCursor()
 }
+//===============================================================================================
+document.addEventListener('click', function (e) {
+	if (e.target.closest('.review-item__video')) {
+
+		e.target.closest('.review-item__video').classList.add('_hide-poster')
+	}
+})

@@ -738,7 +738,7 @@
                     bodyLockToggle();
                     document.documentElement.classList.toggle("menu-open");
                 }
-                if (document.documentElement.classList.contains("menu-open")) if (bodyLockStatus && !e.target.closest(".menu__body") && !e.target.closest("#popup") && !e.target.closest(".lg-close")) menuClose();
+                if (document.documentElement.classList.contains("menu-open")) if (bodyLockStatus && !e.target.closest(".menu__body") && !e.target.closest(".popup") && !e.target.closest(".lg-close")) menuClose();
             }));
         }
         function menuClose() {
@@ -7064,6 +7064,25 @@
                 },
                 on: {}
             });
+            if (document.querySelector(".top-catalog-page__slider")) new swiper_core_Swiper(".top-catalog-page__slider", {
+                modules: [ Navigation, freeMode ],
+                observer: true,
+                observeParents: true,
+                speed: 800,
+                spaceBetween: 10,
+                watchOverflow: true,
+                freeMode: true,
+                slidesPerView: "auto",
+                breakpoints: {
+                    768: {
+                        navigation: {
+                            prevEl: ".catalog-button_prev",
+                            nextEl: ".catalog-button_next"
+                        }
+                    }
+                },
+                on: {}
+            });
             if (document.querySelector(".object-features__slider") && windowWidth < 768) new swiper_core_Swiper(".object-features__slider", {
                 modules: [ Scrollbar, freeMode ],
                 observer: true,
@@ -7159,10 +7178,31 @@
                 },
                 on: {}
             });
+            if (document.querySelector(".reviews__slider")) new swiper_core_Swiper(".reviews__slider", {
+                modules: [ Navigation ],
+                observer: true,
+                observeParents: true,
+                speed: 800,
+                watchOverflow: true,
+                navigation: {
+                    prevEl: ".reviews-swiper_prev",
+                    nextEl: ".reviews-swiper_next"
+                },
+                breakpoints: {
+                    375: {
+                        spaceBetween: 0,
+                        slidesPerView: 1
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30
+                    }
+                },
+                on: {}
+            });
         }
-        window.addEventListener("load", (function(e) {
-            initSliders();
-        }));
+        initSliders();
+        window.addEventListener("DOMContentLoaded", (function(e) {}));
         var can_use_dom = __webpack_require__(807);
         function isObject_isObject(value) {
             var type = typeof value;
@@ -8120,13 +8160,14 @@
         let simplebar_windowWidth = window.innerWidth;
         let formFilter = document.querySelector(".popup-filter__form");
         let customSelect = document.querySelector(".custom-select-filter__content");
-        if (simplebar_windowWidth < 768 && formFilter) {
-            console.log(3);
-            formFilter.removeAttribute("data-simplebar");
-        } else new SimpleBar(formFilter, {
+        let filterSelect = document.querySelector(".select-filter-wrap");
+        if (simplebar_windowWidth < 768 && formFilter) formFilter.removeAttribute("data-simplebar"); else new SimpleBar(formFilter, {
             autoHide: false
         });
         if (customSelect) new SimpleBar(customSelect, {
+            autoHide: false
+        });
+        if (filterSelect) new SimpleBar(filterSelect, {
             autoHide: false
         });
         let addWindowScrollEvent = false;
@@ -10046,6 +10087,7 @@ PERFORMANCE OF THIS SOFTWARE.
             }
         }
         window.addEventListener("load", (function() {
+            document.documentElement.classList.remove("header_hidden");
             subtitleChange();
             let sidebar;
             let side = document.querySelector(".side-object-page");
@@ -10079,6 +10121,16 @@ PERFORMANCE OF THIS SOFTWARE.
                 }));
             };
             onScrollHeader();
+            let videoIframes = document.querySelectorAll(".review-item__video");
+            for (let index = 0; index < videoIframes.length; index++) {
+                const iframe = videoIframes[index];
+                var playVideoButton = iframe.querySelector(".video-custom-poster");
+                playVideoButton.addEventListener("click", (function(ev) {
+                    var video = iframe.querySelector(".iframe-id");
+                    video.src += "&autoplay=1";
+                    ev.preventDefault();
+                }));
+            }
         }));
         if (!isMobile.any() && document.querySelector(".circle-cursor--outer")) {
             class GlowCursor {
@@ -10131,6 +10183,9 @@ PERFORMANCE OF THIS SOFTWARE.
             }
             new GlowCursor;
         }
+        document.addEventListener("click", (function(e) {
+            if (e.target.closest(".review-item__video")) e.target.closest(".review-item__video").classList.add("_hide-poster");
+        }));
         window["FLS"] = true;
         isWebp();
         menuInit();
