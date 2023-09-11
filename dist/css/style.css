@@ -3279,9 +3279,19 @@ input:-webkit-autofill:focus {
   position: relative;
 }
 
-.header__lang img {
+.header__lang::before {
+  content: "";
+  -webkit-transition: background 0.3s ease 0s;
+  transition: background 0.3s ease 0s;
+  width: 24px;
+  height: 24px;
   position: relative;
   z-index: 2;
+  background: url("../img/header/lang.svg") center center no-repeat;
+}
+
+.header__lang:active::before {
+  background: url("../img/header/lang-color.svg") center center no-repeat;
 }
 
 .header__lang::after {
@@ -6997,7 +7007,6 @@ input:-webkit-autofill:focus {
 }
 
 .circle-cursor--inner {
-  display: none;
   width: 5px;
   height: 5px;
   left: -2.5px;
