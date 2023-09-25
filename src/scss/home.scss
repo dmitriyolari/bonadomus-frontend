@@ -3,6 +3,7 @@
 	// .page__main
 
 	&__main {
+		min-height: 100vh;
 		padding: 269px 0 320px;
 		@media (min-width: $tablet) {
 			padding: 310px 0 138px;
@@ -157,6 +158,17 @@
 		height: 100%;
 		top: 0;
 		left: 0;
+
+		background: url("@img/main/bg-mob.png") no-repeat center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover !important;
+		background-color: #1c120c;
+		background-attachment: fixed;
+		@media (min-width: $mobileSmall) {
+			background: url("@img/main/bg.png") no-repeat center fixed;
+		}
 
 		&::before {
 			content: "";

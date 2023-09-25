@@ -2,10 +2,10 @@
 	// .page-about__main
 
 	&__main {
+		min-height: 100vh;
 		color: #fff;
 		padding: 92px 0 56px;
 		@media (min-width: $mobile) {
-			background: url("@img/about/main/bg_pc.png") center center / cover no-repeat;
 			padding: 142px 0 72px;
 		}
 		position: relative;
@@ -20,8 +20,15 @@
 			background: rgba(0, 0, 0, 0.7);
 		}
 		.main-about-page__image-bg {
+			background: url("@img/about/main/bg_mob.png") no-repeat center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover !important;
+			background-color: #1c120c;
+			background-attachment: fixed;
 			@media (min-width: $mobile) {
-				display: none;
+				background: url("@img/about/main/bg_pc.png") no-repeat center fixed;
 			}
 			position: absolute;
 			width: 100%;

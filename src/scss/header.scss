@@ -245,27 +245,39 @@
 	// .header__mobile
 
 	&__mobile {
-		.header_hidden & {
-			bottom: -100%;
-		}
 		@media (min-width: $mobile) {
 			display: none;
 		}
-		background: #192b3f;
 		height: 56px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+
 		position: fixed;
 		z-index: 4;
 		bottom: 0;
 		width: 100%;
 		left: 0;
-		padding: 0 27px;
+		padding: 0 11px;
 		transition: all 0.3s ease 0s;
+
+		.header_hidden & {
+			bottom: -100%;
+		}
+		.header_bg & {
+			background: #192b3f;
+		}
 	}
 }
 .mobile-header {
+	&__container {
+		min-height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		border-top: 1px solid #ffffff24;
+		.header_bg & {
+			border-top: none;
+		}
+	}
 }
 .menu {
 	// .menu__icon
