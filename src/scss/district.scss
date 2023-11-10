@@ -8,6 +8,8 @@
 	// .page-district__cards
 
 	&__cards {
+		position: relative;
+		z-index: 3;
 		.cards-main__pagination {
 			margin-top: 24px;
 			@media (min-width: $mobile) {
@@ -75,6 +77,8 @@
 }
 //===============================================================================================
 .district-top-image {
+	position: relative;
+	z-index: 3;
 	@media (min-width: $mobile) {
 		min-height: 644px;
 		height: 30vh;
@@ -102,11 +106,25 @@
 		& > *:not(:last-child) {
 			margin-bottom: 48px;
 		}
+		@media (min-width: $mobile) {
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				bottom: -165px;
+				right: 0;
+				width: 657px;
+				height: 2114px;
+				background: url("@img/district-page/decor-main.svg") center center / contain no-repeat;
+			}
+		}
 	}
 
 	// .single-district-main__section
 
 	&__section {
+		position: relative;
+		z-index: 3;
 		& > *:not(:last-child) {
 			margin-bottom: 24px;
 			display: block;
