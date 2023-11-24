@@ -560,9 +560,10 @@
 	// .consultation-home-page__row
 
 	&__row {
+		position: relative;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: end;
 		align-items: center;
 		gap: 54px;
 		@media (min-width: $tablet) {
@@ -570,7 +571,7 @@
 		}
 		@media (min-width: $mobile) {
 			flex-direction: row;
-			gap: 120px;
+			gap: 80px;
 		}
 	}
 
@@ -588,11 +589,15 @@
 				height: 100%;
 				top: 0;
 				left: 0;
+				z-index: 2;
 			}
 		}
 		@media (max-width: $mobile) {
 			max-width: 100%;
 			margin-left: 50px;
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
 			img {
 				width: 100%;
 				height: 100%;
@@ -744,9 +749,10 @@
 	// .services-home-page__row
 
 	&__row {
+		position: relative;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: end;
 		align-items: center;
 		gap: 56px;
 		@media (min-width: $tablet) {
@@ -754,7 +760,7 @@
 		}
 		@media (min-width: $mobile) {
 			flex-direction: row;
-			gap: 120px;
+			gap: 80px;
 		}
 	}
 
@@ -777,6 +783,9 @@
 		@media (max-width: $mobile) {
 			max-width: 100%;
 			margin-left: 50px;
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
 			img {
 				width: 100%;
 				height: 100%;

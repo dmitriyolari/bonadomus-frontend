@@ -1,0 +1,84 @@
+.worker-card {
+	left: 0;
+	bottom: 0;
+	z-index: 3;
+	min-width: 290px;
+	min-height: 100px;
+	overflow: hidden;
+	display: flex;
+
+	background: url("@img/worker_icon_mob.svg") center center / cover no-repeat;
+
+	@media (min-width: $tablet) {
+		bottom: 94px;
+	}
+	@media (min-width: $mobile) {
+		background: url("@img/worker_icon.svg") center center / cover no-repeat;
+		position: absolute;
+		min-width: 311px;
+		min-height: 107px;
+		border-radius: 0 9px 9px 0;
+	}
+	&.worker-card_gold {
+		background: url("@img/worker_icon_gold_mob.svg") center center / cover no-repeat;
+		@media (min-width: $mobile) {
+			background: url("@img/worker_icon_gold.svg") center center / cover no-repeat;
+		}
+	}
+	// .worker-card__icon
+
+	&__icon {
+		height: 100%;
+		min-height: 100px;
+		flex: 0 0 97px;
+		@media (min-width: $mobile) {
+			min-height: 107px;
+		}
+	}
+
+	// .worker-card__info
+
+	&__info {
+		padding: 11px 31px 13px 16px;
+		@media (min-width: $mobile) {
+			padding: 16px 45px 15px 16px;
+		}
+	}
+
+	// .worker-card__name
+
+	&__name {
+		color: #192b3f;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 29px;
+		text-transform: uppercase;
+		padding-bottom: 4px;
+		position: relative;
+		margin-bottom: 4px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 69px;
+			height: 1px;
+			background: rgba(36, 36, 36, 0.2);
+		}
+	}
+
+	// .worker-card__label
+
+	&__label {
+		color: rgba(36, 36, 36, 0.6);
+		.worker-card_gold & {
+			color: #192b3fcc;
+		}
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 120%; /* 19.2px */
+	}
+}
