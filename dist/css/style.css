@@ -4721,9 +4721,6 @@ input:-webkit-autofill:focus {
   font-weight: 300;
   line-height: 26px;
   /* 144.444% */
-  -webkit-line-clamp: 9;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
@@ -6912,6 +6909,10 @@ input:-webkit-autofill:focus {
   display: block;
 }
 
+.single-district-main__section:not(:last-child) {
+  margin-bottom: 48px;
+}
+
 .single-district-main__subtitle {
   font-weight: 500;
 }
@@ -6921,7 +6922,7 @@ input:-webkit-autofill:focus {
 }
 
 .section-single-district-title {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 500;
   line-height: normal;
 }
@@ -7142,6 +7143,59 @@ input:-webkit-autofill:focus {
 
 .worker-card_gold .worker-card__label {
   color: rgba(25, 43, 63, 0.8);
+}
+
+.page-policy {
+  padding-bottom: 64px;
+}
+
+.page-policy__top {
+  max-width: 755px;
+  margin-bottom: 40px;
+}
+
+.page-policy__top > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.page-policy__title {
+  font-size: 24px;
+  line-height: 40px;
+  /* 166.667% */
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.page-policy__date {
+  color: #4e4e4e;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.page-policy .article__text a {
+  text-decoration: underline;
+}
+
+.page-policy .section-single-district-title {
+  margin-bottom: 16px;
+}
+
+.page-policy .text-wrapper-mw__content > *:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.page-policy__date-bottom {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.page-policy__date-bottom span {
+  font-weight: 600;
 }
 
 /* Functional styling;
@@ -8721,11 +8775,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .popup-images .popup__content {
     padding: 10px 31px 220px;
-    margin-top: 134px;
+    margin-top: 40px;
   }
 
   .popup-images__top {
-    padding: 50px 31px 20px;
+    padding: 10px 31px 0px;
   }
 
   .gallery__close span {
@@ -9181,6 +9235,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .info-services-home__subtitle {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
     -webkit-line-clamp: 6;
   }
 
@@ -9497,6 +9553,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     background: url("../img/district-page/decor-main.svg") center center/contain no-repeat;
   }
 
+  .section-single-district-title {
+    font-size: 28px;
+  }
+
   .wrapper-not-found__header {
     padding-top: 40px;
   }
@@ -9523,6 +9583,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .worker-card__info {
     padding: 16px 45px 15px 16px;
+  }
+
+  .page-policy__title {
+    font-size: 40px;
+    line-height: normal;
+  }
+
+  .page-policy .text-wrapper-mw__content > *:not(:last-child) {
+    margin-bottom: 29px;
   }
 }
 
@@ -9972,6 +10041,22 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+
+  .info-services-home__subtitle {
+    max-height: 234px;
+    position: relative;
+  }
+
+  .info-services-home__subtitle::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 220px;
+    height: 20px;
+    background: -webkit-gradient(linear, right top, left top, from(#192b3f), color-stop(80.76%, rgba(255, 255, 255, 0)));
+    background: linear-gradient(to left, #192b3f, rgba(255, 255, 255, 0) 80.76%);
   }
 
   .main-about-page__container {

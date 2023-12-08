@@ -835,13 +835,25 @@
 		font-size: 18px;
 		font-weight: 300;
 		line-height: 26px; /* 144.444% */
-
-		-webkit-line-clamp: 9;
-		display: -webkit-box;
-		-webkit-box-orient: vertical;
 		overflow: hidden;
+
 		@media (min-width: $mobile) {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
 			-webkit-line-clamp: 6;
+		}
+		@media (max-width: $mobile) {
+			max-height: 234px;
+			position: relative;
+			&::after {
+				content: "";
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				width: 220px;
+				height: 20px;
+				background: linear-gradient(to left, #192b3f, rgba(255, 255, 255, 0) 80.76%);
+			}
 		}
 	}
 

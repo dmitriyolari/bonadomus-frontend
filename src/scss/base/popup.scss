@@ -1366,7 +1366,7 @@ body::after {
 		min-height: 100%;
 		@media (min-width: $mobile) {
 			padding: 10px 31px 220px;
-			margin-top: 134px;
+			margin-top: 40px;
 		}
 	}
 	// .popup-images__top
@@ -1379,7 +1379,7 @@ body::after {
 		background-color: #fff;
 		padding: 24px 17px 32px;
 		@media (min-width: $mobile) {
-			padding: 50px 31px 20px;
+			padding: 10px 31px 0px;
 		}
 		position: fixed;
 		z-index: 2;

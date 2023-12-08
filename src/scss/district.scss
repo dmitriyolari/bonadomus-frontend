@@ -129,6 +129,9 @@
 			margin-bottom: 24px;
 			display: block;
 		}
+		&:not(:last-child) {
+			margin-bottom: 48px;
+		}
 	}
 
 	// .single-district-main__title
@@ -146,8 +149,11 @@
 	}
 }
 .section-single-district-title {
-	font-size: 28px;
+	font-size: 22px;
 	font-weight: 500;
 	line-height: normal;
+	@media (min-width: $mobile) {
+		font-size: 28px;
+	}
 }
 //===============================================================================================
