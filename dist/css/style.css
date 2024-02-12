@@ -126,7 +126,7 @@
 html,
 body {
   height: 100%;
-  min-width: 375px;
+  min-width: 320px;
 }
 
 body {
@@ -3279,6 +3279,7 @@ input:-webkit-autofill:focus {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   opacity: 0;
+  cursor: pointer;
 }
 
 .header__lang {
@@ -4134,9 +4135,8 @@ input:-webkit-autofill:focus {
 .main-page__title {
   color: #fff;
   font-weight: 500;
-  font-size: 48px;
-  line-height: 58px;
-  /* 120.833% */
+  font-size: 36px;
+  line-height: 120%;
 }
 
 .main-page__btn {
@@ -5101,10 +5101,9 @@ input:-webkit-autofill:focus {
 
 .main-about-page__title {
   margin-bottom: 40px;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 500;
-  line-height: 58px;
-  /* 120.833% */
+  line-height: 120%;
   text-transform: uppercase;
 }
 
@@ -6981,9 +6980,8 @@ input:-webkit-autofill:focus {
 .wrapper-not-found__title {
   margin-bottom: 20px;
   font-weight: 500;
-  font-size: 48px;
-  line-height: 58px;
-  /* 120.833% */
+  font-size: 36px;
+  line-height: 120%;
 }
 
 .wrapper-not-found__title::after {
@@ -10145,21 +10143,21 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
-@media (min-width: 1024px) and (min-width: 23.4375em) and (max-width: 79em) {
-@supports (gap: clamp( 0.625rem , -3.250492126rem  +  16.5354330709vw , 9.8125rem )) {
+@media (min-width: 1024px) and (min-width: 20em) and (max-width: 79em) {
+@supports (gap: clamp( 0.625rem , -2.4894067797rem  +  15.5720338983vw , 9.8125rem )) {
     .wrapper-not-found__body {
-      gap: clamp( 0.625rem , -3.250492126rem  +  16.5354330709vw , 9.8125rem );
+      gap: clamp( 0.625rem , -2.4894067797rem  +  15.5720338983vw , 9.8125rem );
     }
 }
 
-@supports not (gap: clamp( 0.625rem , -3.250492126rem  +  16.5354330709vw , 9.8125rem )) {
+@supports not (gap: clamp( 0.625rem , -2.4894067797rem  +  15.5720338983vw , 9.8125rem )) {
     .wrapper-not-found__body {
-      gap: calc(0.625rem + 9.1875 * (100vw - 23.4375rem) / 55.5625);
+      gap: calc(0.625rem + 9.1875 * (100vw - 20rem) / 59);
     }
 }
 }
 
-@media (min-width: 1024px) and (max-width: 23.4375em) {
+@media (min-width: 1024px) and (max-width: 20em) {
   .wrapper-not-found__body {
     gap: 0.625rem;
   }

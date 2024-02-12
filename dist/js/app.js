@@ -6967,7 +6967,7 @@
                     el: ".swiper-pagination"
                 },
                 breakpoints: {
-                    375: {},
+                    320: {},
                     768: {
                         touchRatio: 0,
                         navigation: {
@@ -7031,7 +7031,7 @@
                     clickable: true
                 },
                 breakpoints: {
-                    375: {},
+                    320: {},
                     768: {}
                 },
                 on: {}
@@ -7049,7 +7049,7 @@
                     clickable: true
                 },
                 breakpoints: {
-                    375: {
+                    320: {
                         spaceBetween: 12,
                         slidesPerView: "auto"
                     },
@@ -7112,7 +7112,7 @@
                     el: ".swiper-pagination"
                 },
                 breakpoints: {
-                    375: {
+                    320: {
                         slidesPerView: 1
                     },
                     480: {
@@ -7162,7 +7162,7 @@
                     el: ".swiper-pagination"
                 },
                 breakpoints: {
-                    375: {
+                    320: {
                         slidesPerView: "auto",
                         spaceBetween: 20
                     },
@@ -7189,7 +7189,7 @@
                     nextEl: ".reviews-swiper_next"
                 },
                 breakpoints: {
-                    375: {
+                    320: {
                         spaceBetween: 0,
                         slidesPerView: 1
                     },

@@ -75,7 +75,7 @@ function initSliders() {
 
 			// Брейкпоінти
 			breakpoints: {
-				375: {
+				320: {
 				},
 				768: {
 					touchRatio: 0,
@@ -218,7 +218,7 @@ function initSliders() {
 
 			// Брейкпоінти
 			breakpoints: {
-				375: {
+				320: {
 				},
 				768: {
 				}
@@ -275,7 +275,7 @@ function initSliders() {
 
 			// Брейкпоінти
 			breakpoints: {
-				375: {
+				320: {
 					spaceBetween: 12,
 					slidesPerView: "auto",
 
@@ -402,7 +402,7 @@ function initSliders() {
 
 			// Брейкпоінти
 			breakpoints: {
-				// 375: {
+				// 320: {
 				// },
 				// 768: {
 				// 	touchRatio: 0,
@@ -454,7 +454,7 @@ function initSliders() {
 
 			// Брейкпоінти
 			breakpoints: {
-				375: {
+				320: {
 					slidesPerView: 1,
 				},
 				480: {
@@ -510,7 +510,7 @@ function initSliders() {
 
 			// Брейкпоінти
 			// breakpoints: {
-			// 	375: {
+			// 	320: {
 			// 		slidesPerView: 1,
 			// 	},
 			// 	480: {
@@ -582,7 +582,7 @@ function initSliders() {
 
 			// Брейкпоінти
 			breakpoints: {
-				375: {
+				320: {
 					slidesPerView: "auto",
 					spaceBetween: 20,
 				},
@@ -653,7 +653,7 @@ function initSliders() {
 
 			// Брейкпоінти
 			breakpoints: {
-				375: {
+				320: {
 					spaceBetween: 0,
 					slidesPerView: 1,
 				},
