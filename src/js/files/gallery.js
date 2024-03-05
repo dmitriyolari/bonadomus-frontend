@@ -53,7 +53,8 @@ if (galleries.length) {
 				hideControlOnEnd: true,
 				loop: false,
 				slideEndAnimation: false,
-				mode: "lg-fade"
+				mode: "lg-fade",
+				selector: 'a'
 			})
 		})
 	});

@@ -209,6 +209,10 @@
 		display: block;
 		position: relative;
 		border-radius: 10px;
+		min-width: 256px;
+		@media (min-width: $mobile) {
+			min-width: 292px;
+		}
 
 		overflow: hidden;
 		&::after {
@@ -234,6 +238,7 @@
 	// .card__slider
 
 	&__slider {
+		height: 100%;
 	}
 
 	// .card__wrapper
