@@ -209,6 +209,10 @@
 		display: block;
 		position: relative;
 		border-radius: 10px;
+		min-width: 256px;
+		@media (min-width: $mobile) {
+			min-width: 292px;
+		}
 
 		overflow: hidden;
 		&::after {
@@ -234,6 +238,7 @@
 	// .card__slider
 
 	&__slider {
+		height: 100%;
 	}
 
 	// .card__wrapper
@@ -256,6 +261,9 @@
 
 	&__info {
 		padding: 16px;
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
 		.card_complex & {
 			padding: 16px 16px 20px;
 		}
@@ -277,6 +285,7 @@
 	// .info-card__top
 
 	&__top {
+		flex: 1 1 auto;
 		border-bottom: 1px solid #e4e4e4;
 		padding-bottom: 16px;
 		@media (min-width: $mobile) {

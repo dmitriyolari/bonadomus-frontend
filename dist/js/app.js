@@ -9950,7 +9950,8 @@ PERFORMANCE OF THIS SOFTWARE.
                         hideControlOnEnd: true,
                         loop: false,
                         slideEndAnimation: false,
-                        mode: "lg-fade"
+                        mode: "lg-fade",
+                        selector: "a"
                     })
                 });
             }));
@@ -10097,7 +10098,7 @@ PERFORMANCE OF THIS SOFTWARE.
                     sidebar = new StickySidebar(side, {
                         containerSelector: `.${sideParent}`,
                         innerWrapperSelector: ".sidebar__inner",
-                        topSpacing: headerHeight + 15,
+                        topSpacing: 0,
                         bottomSpacing: 0,
                         minWidth: 991
                     });

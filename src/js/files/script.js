@@ -96,7 +96,7 @@ window.addEventListener('load', function () {
 			sidebar = new StickySidebar(side, {
 				containerSelector: `.${sideParent}`,
 				innerWrapperSelector: '.sidebar__inner',
-				topSpacing: headerHeight + 15,
+				topSpacing: 0,
 				bottomSpacing: 0,
 				minWidth: 991,
 			});
