@@ -6386,18 +6386,6 @@ input:-webkit-autofill:focus {
 
 .object-apartment__top {
   margin-bottom: 20px;
-  position: relative;
-  padding: 0px 0px 114% 0px;
-}
-
-.object-apartment__top img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
 }
 
 .object-apartment__info > *:not(:last-child) {
@@ -6478,6 +6466,75 @@ input:-webkit-autofill:focus {
 
 .object-apartment .swiper-pagination {
   margin-top: 30px;
+}
+
+.top-object-apartment__slider {
+  position: relative;
+}
+
+.top-object-apartment__slide {
+  width: 100%;
+}
+
+.top-object-apartment__slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.top-object-apartment .swiper-pagination {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 20px;
+}
+
+.top-object-apartment-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2d3f53;
+  color: #fff;
+  font-size: 14px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.top-object-apartment-btn.swiper-button-disabled {
+  background-color: rgba(45, 63, 83, 0.5019607843);
+}
+
+.top-object-apartment-btn--left {
+  left: 20px;
+}
+
+.top-object-apartment-btn--left::before {
+  padding-right: 3px;
+}
+
+.top-object-apartment-btn--right {
+  right: 20px;
+}
+
+.top-object-apartment-btn--right::before {
+  padding-left: 3px;
 }
 
 .object-apartment-tabs__navigation {
@@ -10560,6 +10617,24 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     background: #cec086;
     -webkit-box-shadow: 0px 12px 24px 0px rgba(206, 192, 134, 0.13);
             box-shadow: 0px 12px 24px 0px rgba(206, 192, 134, 0.13);
+  }
+
+  .top-object-apartment__slider:hover .top-object-apartment__nav {
+    opacity: 1;
+  }
+
+  .top-object-apartment__nav {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+  }
+
+  .top-object-apartment-btn.swiper-button-disabled:hover {
+    background-color: rgba(45, 63, 83, 0.5019607843);
+  }
+
+  .top-object-apartment-btn:hover {
+    background-color: #344d69;
   }
 
   .brochure__link:hover {

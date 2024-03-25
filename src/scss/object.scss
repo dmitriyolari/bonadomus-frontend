@@ -1110,16 +1110,6 @@
 
 	&__top {
 		margin-bottom: 20px;
-		position: relative;
-		padding: 0px 0px 114% 0px;
-		img {
-			object-fit: contain;
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-		}
 	}
 
 	// .object-apartment__info
@@ -1205,6 +1195,98 @@
 
 	.swiper-pagination {
 		margin-top: 30px;
+	}
+}
+.object-apartment {
+	// .object-apartment__top
+
+	&__top {
+	}
+}
+.top-object-apartment {
+	// .top-object-apartment__slider
+
+	&__slider {
+		position: relative;
+		@media (any-hover: hover) {
+			&:hover {
+				.top-object-apartment__nav {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	// .top-object-apartment__wrapper
+
+	&__wrapper {
+	}
+
+	// .top-object-apartment__slide
+
+	&__slide {
+		width: 100%;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	// .top-object-apartment__nav
+
+	&__nav {
+		@media (any-hover: hover) {
+			transition: all 0.3s ease 0s;
+			opacity: 0;
+		}
+	}
+
+	.swiper-pagination {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 20px;
+	}
+}
+.top-object-apartment-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #2d3f53;
+	color: #fff;
+	font-size: 14px;
+	transition: all 0.3s ease 0s;
+	&.swiper-button-disabled {
+		background-color: #2d3f5380;
+		@media (any-hover: hover){
+			&:hover{
+				background-color: #2d3f5380;
+			}
+		}
+	}
+	&--left {
+		left: 20px;
+		&::before {
+			padding-right: 3px;
+		}
+	}
+	&--right {
+		right: 20px;
+		&::before {
+			padding-left: 3px;
+		}
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #344d69;
+		}
 	}
 }
 .object-apartment-tabs {

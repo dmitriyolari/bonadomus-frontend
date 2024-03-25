@@ -441,6 +441,7 @@ function initSliders() {
 
 			pagination: {
 				el: '.swiper-pagination',
+				clickable: true,
 			},
 
 
@@ -661,6 +662,68 @@ function initSliders() {
 					slidesPerView: 2,
 					spaceBetween: 30,
 				}
+			},
+
+			// Події
+			on: {
+
+			}
+		});
+	}
+	if (document.querySelector('.top-object-apartment__slider')) { // Вказуємо склас потрібного слайдера
+		// Створюємо слайдер
+		new Swiper('.top-object-apartment__slider', { // Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			modules: [Navigation, Pagination],
+			observer: true,
+			observeParents: true,
+			speed: 800,
+			watchOverflow: true,
+			autoHeight: true,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+
+			// Ефекти
+			// effect: 'fade',
+			/*
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		*/
+
+			// Пагінація
+
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+
+			// Кнопки "вліво/вправо"
+			navigation: {
+				prevEl: '.top-object-apartment-btn--left',
+				nextEl: '.top-object-apartment-btn--right',
+			},
+
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Брейкпоінти
+			breakpoints: {
+				320: {
+					spaceBetween: 0,
+					slidesPerView: 1,
+				},
 			},
 
 			// Події

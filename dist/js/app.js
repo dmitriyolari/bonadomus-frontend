@@ -7109,7 +7109,8 @@
                 speed: 800,
                 watchOverflow: true,
                 pagination: {
-                    el: ".swiper-pagination"
+                    el: ".swiper-pagination",
+                    clickable: true
                 },
                 breakpoints: {
                     320: {
@@ -7196,6 +7197,29 @@
                     768: {
                         slidesPerView: 2,
                         spaceBetween: 30
+                    }
+                },
+                on: {}
+            });
+            if (document.querySelector(".top-object-apartment__slider")) new swiper_core_Swiper(".top-object-apartment__slider", {
+                modules: [ Navigation, Pagination ],
+                observer: true,
+                observeParents: true,
+                speed: 800,
+                watchOverflow: true,
+                autoHeight: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true
+                },
+                navigation: {
+                    prevEl: ".top-object-apartment-btn--left",
+                    nextEl: ".top-object-apartment-btn--right"
+                },
+                breakpoints: {
+                    320: {
+                        spaceBetween: 0,
+                        slidesPerView: 1
                     }
                 },
                 on: {}
