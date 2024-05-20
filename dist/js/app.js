@@ -10095,6 +10095,19 @@ PERFORMANCE OF THIS SOFTWARE.
             }
         }
         if (document.querySelector(".wrapper-header-bg")) header.classList.add("header_bg");
+        const itiInputs = document.querySelectorAll(".iti-input");
+        if (itiInputs) for (let i = 0; i < itiInputs.length; i++) {
+            let item = itiInputs[i];
+            window.intlTelInput(item, {
+                utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/js/utils.js",
+                initialCountry: "bg",
+                strictMode: true,
+                nationalMode: false,
+                showSelectedDialCode: true,
+                autoPlaceholder: "off",
+                useFullscreenPopup: false
+            });
+        }
         if (!header.classList.contains("header_bg")) window.addEventListener("scroll", (function(e) {
             let scrollY = window.scrollY;
             if (scrollY > header.clientHeight) header.classList.add("header_bg"); else header.classList.remove("header_bg");

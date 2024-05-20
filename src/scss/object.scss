@@ -479,7 +479,23 @@
 	}
 }
 //===============================================================================================
+:root {
+	--iti-border-width: 2px;
+	--iti-arrow-height: 3px;
+	--iti-arrow-width: 6px;
+}
 .side-object-page {
+	.iti__dropdown-content,
+	.iti__search-input {
+		background-color: #f4f4f4 !important;
+		color: #5f5f5f;
+	}
+	.iti__dropdown-content {
+		border: 1px solid #e0e0e0 !important;
+	}
+	.iti__country.iti__highlight {
+		background-color: #ebebeb !important;
+	}
 	// .side-object-page__title
 
 	&__title {
@@ -1275,8 +1291,8 @@
 	transition: all 0.3s ease 0s;
 	&.swiper-button-disabled {
 		background-color: #2d3f5380;
-		@media (any-hover: hover){
-			&:hover{
+		@media (any-hover: hover) {
+			&:hover {
 				background-color: #2d3f5380;
 			}
 		}

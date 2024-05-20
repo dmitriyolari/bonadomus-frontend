@@ -1211,12 +1211,19 @@ body::after {
 		background-color: transparent;
 		padding-bottom: 8px;
 		border-bottom: 1px solid #37495d;
+		transition: border 0.3s ease 0s;
 		&::placeholder {
 			color: #9ea6ae;
 			font-size: 16px;
 			font-weight: 300;
 			line-height: normal;
 			letter-spacing: -0.408px;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				border-color: #ffffffcc;
+			}
 		}
 	}
 
@@ -1932,4 +1939,90 @@ input:-webkit-autofill:focus {
 			padding: 0 18px;
 		}
 	}
+}
+//===============================================================================================
+.iti {
+	width: 100%;
+}
+.iti__selected-country {
+	padding: 0 !important;
+	padding-bottom: 8px !important;
+}
+.iti--show-selected-dial-code .iti__selected-country {
+	background-color: transparent !important;
+	position: relative;
+	&[aria-expanded="true"] {
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 1px;
+			width: 31px;
+			background: #baac72;
+		}
+	}
+}
+.iti__selected-dial-code {
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: -0.408px;
+}
+.iti__arrow {
+	border-top: var(--iti-arrow-height) solid !important;
+	border-top-color: #fff;
+	border-bottom: none !important;
+}
+.iti__arrow--up {
+	border-top-color: #baac72 !important;
+}
+.iti__dropdown-content {
+	border: 1px solid #2d3f53 !important;
+}
+.iti__dropdown-content,
+.iti__search-input {
+	outline: none;
+	color: #fff;
+	border-radius: 8px;
+	background-color: #233549 !important;
+}
+.iti__country {
+	border-radius: 8px;
+	padding: 5px 15px;
+	& > *:not(:last-child) {
+		margin-right: 8px;
+	}
+}
+.iti__country-name,
+.iti__dial-code {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px; /* 171.429% */
+}
+.iti__dial-code {
+	color: #baac72;
+}
+.iti--inline-dropdown .iti__dropdown-content {
+	margin-top: 8px;
+}
+
+.iti__country-list {
+	&::-webkit-scrollbar {
+		position: absolute;
+		right: 40px;
+		width: 2px;
+		height: 0.5em;
+		background-color: #2d3f53;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #baac72;
+		border-radius: 3px;
+		&:hover {
+			background: rgba(255, 255, 255, 0.2);
+		}
+	}
+}
+.iti__country.iti__highlight {
+	background-color: #2D3F53 !important;
 }
