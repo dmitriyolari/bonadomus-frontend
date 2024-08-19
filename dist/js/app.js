@@ -10403,6 +10403,21 @@ PERFORMANCE OF THIS SOFTWARE.
         document.addEventListener("click", (function(e) {
             if (e.target.closest(".review-item__video")) e.target.closest(".review-item__video").classList.add("_hide-poster");
         }));
+        let center = [ 25.28742755795135, 55.36964799999995 ];
+        function init() {
+            let map = new ymaps.Map("map", {
+                center,
+                zoom: 16
+            });
+            let placemark = new ymaps.Placemark(center, {}, {
+                iconLayout: "default#image",
+                iconImageHref: "img/custom-mark.svg",
+                iconImageSize: [ 50, 76 ],
+                iconImageOffset: [ -20, -76 ]
+            });
+            map.geoObjects.add(placemark);
+        }
+        if (document.querySelector("#map")) ymaps.ready(init);
         window["FLS"] = true;
         isWebp();
         menuInit();

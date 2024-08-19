@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Contacts"
+})
+
+<body>
+	<div class="wrapper wrapper-header-bg">
+		@@include('html/_header.htm',{})
+		<main class="page page-contacts">
+			<div class="page-contacts__top top-page-contacts">
+				<div class="top-page-contacts__container">
+					<div class="breadcrumbs breadcrumbs_white_shadow">
+						<ul class="breadcrumbs__list">
+							<li>
+								<a href="index.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li>
+								Контакты
+							</li>
+						</ul>
+					</div>
+					<h1 class="top-page-contacts__title title">
+						Контакты
+					</h1>
+				</div>
+			</div>
+			<div class="page-contacts__main main-page-contacts">
+				<div class="main-page-contacts__container">
+					<div class="main-page-contacts__left">
+						<div class="main-page-contacts__info info-main-contacts">
+							<div class="info-main-contacts__title">
+								Информация
+							</div>
+							<div class="info-main-contacts__row">
+								<div class="info-main-contacts__item">
+									<div class="info-main-contacts__img">
+										<img src="@img/contacts/tel.svg" alt="">
+									</div>
+									<div>
+										<p>
+											Телефон:
+										</p>
+										<a href="tel:+97124414666">
+											+971 2 441 4666
+										</a>
+									</div>
+								</div>
+								<div class="info-main-contacts__item">
+									<div class="info-main-contacts__img">
+										<img src="@img/contacts/date.svg" alt="">
+									</div>
+									<div>
+										<p>
+											График работы:
+										</p>
+										<span>
+											c Пн по Вс с 8:00 до 18:00
+										</span>
+									</div>
+								</div>
+								<div class="info-main-contacts__item">
+									<div class="info-main-contacts__img">
+										<img src="@img/contacts/loc.svg" alt="">
+									</div>
+									<div>
+										<p>
+											Адрес:
+										</p>
+										<span>
+											Shaikha Mhara-Al Qusais Bldg, Office 111-0137, Al Qusais Second, Dubai
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-page-contacts__map" id="map">
+
+						</div>
+					</div>
+					<div class="main-page-contacts__form form-main-contacts">
+						<div class="form-main-contacts__top">
+							<div class="form-main-contacts__title">
+								<p>
+									Связаться с нами
+								</p>
+								<span>
+									Наш агент свяжется с вами в ближайшее время.
+								</span>
+							</div>
+						</div>
+						<div class="form-main-contacts__agent agent-form-contacts">
+							<div class="agent-form-contacts__item">
+								<div class="agent-form-contacts__img">
+									<img src="@img/contacts/agent.png" alt="">
+								</div>
+								<div>
+									<p>
+										Александр Котов
+									</p>
+									<span>
+										Агент по недвижимости
+									</span>
+								</div>
+							</div>
+							<a href="mailto:info@bonadomus.com" class="agent-form-contacts__link">
+								info@bonadomus.com
+							</a>
+						</div>
+						<form action="" class="form-main-contacts__actions actions-form-contacts">
+							<input autocomplete="off" type="text" placeholder="Ваше имя*" class="actions-form-contacts__input">
+							<input autocomplete="off" type="tel" placeholder="Телефон*" class="actions-form-contacts__input">
+							<input autocomplete="off" type="email" placeholder="E-mail*" class="actions-form-contacts__input">
+							<div class="actions-form-contacts__group">
+								<span>
+									Задайте ваш вопрос или укажите удобное время,
+									и мы свяжемся с вами.
+								</span>
+								<textarea name="" id="" placeholder="Написать сообщение"
+									class="actions-form-contacts__input"></textarea>
+							</div>
+							<div class="actions-form-contacts__checks">
+								<div class="checkbox">
+									<input id="c_1" class="checkbox__input" type="checkbox" value="1" checked="checked">
+									<label for="c_1" class="checkbox__label"><span class="checkbox__text">
+											Нажимая на кнопку отправить, Вы соглашаетесь на обработку личных данных и согласны с <a
+												href="">Политикой конфиденциальности</a>
+										</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" class="checkbox__input" type="checkbox" value="2" checked="checked">
+									<label for="c_2" class="checkbox__label"><span class="checkbox__text">Подписаться на рассылку новых предложений</span></label>
+								</div>
+							</div>
+							<button type="button" class="actions-form-contacts__button">
+								Отправить
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_popup.htm',{})
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
