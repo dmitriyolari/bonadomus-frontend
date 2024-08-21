@@ -7401,6 +7401,29 @@
                 },
                 on: {}
             });
+            if (document.querySelector(".main-blog-slider__slider")) new swiper_core_Swiper(".main-blog-slider__slider", {
+                modules: [ Pagination ],
+                observer: true,
+                observeParents: true,
+                speed: 800,
+                watchOverflow: true,
+                freeMode: true,
+                pagination: {
+                    el: ".main-blog-slider__pagination",
+                    clickable: true
+                },
+                breakpoints: {
+                    320: {
+                        spaceBetween: 0,
+                        slidesPerView: 1
+                    },
+                    768: {
+                        spaceBetween: 30,
+                        slidesPerView: "auto"
+                    }
+                },
+                on: {}
+            });
         }
         initSliders();
         window.addEventListener("DOMContentLoaded", (function(e) {}));

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"page-blog"
+})
+
+<body>
+	<div class="wrapper wrapper-header-bg">
+		@@include('html/_header.htm',{})
+		<main class="page page-blog">
+			<div class="page-blog__top">
+				<div class="page-blog__container">
+					<div class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li>
+								<a href="index.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li>
+								Блог
+							</li>
+						</ul>
+					</div>
+					<h1 class="page-blog__title title">Блог</h1>
+				</div>
+			</div>
+			<div class="page-blog__main main-page-blog">
+				<div class="main-page-blog__container">
+					<div class="main-page-blog__content">
+						<div class="main-page-blog__types types-blog-page">
+							<div class="types-blog-page__item checkbox">
+								<input id="type-article_1" class="checkbox__input" type="checkbox" value="1">
+								<label for="type-article_1" class="checkbox__label blog-article-type"><span class="checkbox__text">
+										Недвижимость
+									</span></label>
+							</div>
+							<div class="types-blog-page__item checkbox">
+								<input id="type-article_2" class="checkbox__input" type="checkbox" value="1">
+								<label for="type-article_2" class="checkbox__label blog-article-type"><span class="checkbox__text">
+										Тенденции
+									</span></label>
+							</div>
+							<div class="types-blog-page__item checkbox">
+								<input id="type-article_3" class="checkbox__input" type="checkbox" value="1">
+								<label for="type-article_3" class="checkbox__label blog-article-type"><span class="checkbox__text">
+										Интерьер
+									</span></label>
+							</div>
+							<div class="types-blog-page__item checkbox">
+								<input id="type-article_4" class="checkbox__input" type="checkbox" value="1">
+								<label for="type-article_4" class="checkbox__label blog-article-type"><span class="checkbox__text">
+										Информация
+									</span></label>
+							</div>
+							<div class="types-blog-page__item checkbox">
+								<input id="type-article_5" class="checkbox__input" type="checkbox" value="1">
+								<label for="type-article_5" class="checkbox__label blog-article-type"><span class="checkbox__text">
+										Новости
+									</span></label>
+							</div>
+							<div class="types-blog-page__item checkbox">
+								<input id="type-article_6" class="checkbox__input" type="checkbox" value="1">
+								<label for="type-article_6" class="checkbox__label blog-article-type"><span class="checkbox__text">
+										Традиции
+									</span></label>
+							</div>
+							<div class="types-blog-page__item checkbox">
+								<input id="type-article_7" class="checkbox__input" type="checkbox" value="1">
+								<label for="type-article_7" class="checkbox__label blog-article-type"><span class="checkbox__text">
+										Удобства
+									</span></label>
+							</div>
+							<div class="types-blog-page__item checkbox">
+								<input id="type-article_8" class="checkbox__input" type="checkbox" value="1">
+								<label for="type-article_8" class="checkbox__label blog-article-type"><span class="checkbox__text">
+										Финансы
+									</span></label>
+							</div>
+							<div class="types-blog-page__item checkbox">
+								<input id="type-article_9" class="checkbox__input" type="checkbox" value="1">
+								<label for="type-article_9" class="checkbox__label blog-article-type"><span class="checkbox__text">
+										Культура
+									</span></label>
+							</div>
+						</div>
+						<div class="main-page-blog__row">
+							<div class="blog-page-article">
+								<div class="blog-page-article__image">
+									<img src="@img/blog/card.png" alt="">
+								</div>
+								<div class="blog-page-article__info info-blog-article">
+									<div class="info-blog-article__top">
+										<div class="blog-article-type">
+											Недвижимость
+										</div>
+										<div class="info-blog-article__title">
+											Эволюция ОАЭ
+											в архитектуре:
+											от ветряных башен
+											до самого высокого небоскреба в мире
+										</div>
+										<div class="info-blog-article__label">
+											За пятьдесят лет независимости архитектурный облик Объединенных
+										</div>
+									</div>
+									<div class="info-blog-article__date">
+										<img src="@img/blog/date.svg" alt=""> 14 июня 2024
+									</div>
+									<a href="" class="info-blog-article__link">
+										Читать статью <img src="@img/blog/arr.svg" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="blog-page-article">
+								<div class="blog-page-article__image">
+									<img src="@img/blog/card2.png" alt="">
+								</div>
+								<div class="blog-page-article__info info-blog-article">
+									<div class="info-blog-article__top">
+										<div class="blog-article-type">
+											Информация
+										</div>
+										<div class="info-blog-article__title">
+											EJARI В ДУБАЕ – ИНФОРМАЦИЯ ДЛЯ ИНВЕСТОРОВ И АРЕНДАТОРОВ
+										</div>
+										<div class="info-blog-article__label">
+											Аренда недвижимости в Дубае пользуется большой популярностью. Краткосрочная и долгосрочная
+										</div>
+									</div>
+									<div class="info-blog-article__date">
+										<img src="@img/blog/date.svg" alt=""> 14 июня 2024
+									</div>
+									<a href="" class="info-blog-article__link">
+										Читать статью <img src="@img/blog/arr.svg" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="blog-page-article">
+								<div class="blog-page-article__image">
+									<img src="@img/blog/card3.png" alt="">
+								</div>
+								<div class="blog-page-article__info info-blog-article">
+									<div class="info-blog-article__top">
+										<div class="blog-article-type">
+											Информация
+										</div>
+										<div class="info-blog-article__title">
+											КАК ПОЛУЧИТЬ ЛИЦЕНЗИЮ НА НЕДВИЖИМОСТЬ В ДУБАЕ?
+										</div>
+										<div class="info-blog-article__label">
+											Недвижимость в Дубае – свидетельство динамичного развития города и высокого уровня жизни
+										</div>
+									</div>
+									<div class="info-blog-article__date">
+										<img src="@img/blog/date.svg" alt=""> 14 июня 2024
+									</div>
+									<a href="" class="info-blog-article__link">
+										Читать статью <img src="@img/blog/arr.svg" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="blog-page-article">
+								<div class="blog-page-article__image">
+									<img src="@img/blog/card4.png" alt="">
+								</div>
+								<div class="blog-page-article__info info-blog-article">
+									<div class="info-blog-article__top">
+										<div class="blog-article-type">
+											Недвижимость
+										</div>
+										<div class="info-blog-article__title">
+											Эволюция ОАЭ
+											в архитектуре:
+											от ветряных башен
+											до самого высокого небоскреба в мире
+										</div>
+										<div class="info-blog-article__label">
+											За пятьдесят лет независимости архитектурный облик Объединенных
+										</div>
+									</div>
+									<div class="info-blog-article__date">
+										<img src="@img/blog/date.svg" alt=""> 14 июня 2024
+									</div>
+									<a href="" class="info-blog-article__link">
+										Читать статью <img src="@img/blog/arr.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>	
+						@@include('html/_pagging.htm',{})
+					</div>
+					<div class="main-page-blog__side side-blog-main">
+						<div class="side-blog-main__title">
+							Популярные статьи
+						</div>
+						<div class="side-blog-main__row">
+							<div class="side-blog-main__item">
+								<img src="@img/blog/bg.png" alt="">
+								<div class="blog-article-type">
+									Недвижимость
+								</div>
+								<a href="" class="side-blog-main__name">
+									Эволюция ОАЭ
+									в архитектуре:
+									от ветряных башен
+									до самого высокого небоскреба в мире
+								</a>
+								<div class="side-blog-main__text">
+									За пятьдесят лет независимости архитектурный облик
+								</div>
+							</div>
+							<div class="side-blog-main__item">
+								<img src="@img/blog/bg.png" alt="">
+								<div class="blog-article-type">
+									Финансы
+								</div>
+								<a href="" class="side-blog-main__name">
+									Почему Дубай?
+								</a>
+								<div class="side-blog-main__text">
+									Выбирая направления для переезда или инвестиции
+								</div>
+							</div>
+							<div class="side-blog-main__item">
+								<img src="@img/blog/bg.png" alt="">
+								<div class="blog-article-type">
+									Недвижимость
+								</div>
+								<a href="" class="side-blog-main__name">
+									ОАЭ, в частности Дубай, стремятся стать глобальным финансовым хабом
+								</a>
+								<div class="side-blog-main__text">
+									Финансы играют ключевую роль в экономике, особенно в такой
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-blog-slider">
+				<div class="main-blog-slider__container">
+					<div class="main-blog-slider__slider swiper">
+						<div class="main-blog-slider__wrapper swiper-wrapper">
+							<div class="main-blog-slider__slide blog-slider-slide swiper-slide">
+								<img src="@img/blog/slide1.png" alt="">
+								<div class="blog-article-type">
+									Недвижимость
+								</div>
+								<div class="blog-slider-slide__bottom">
+									<div class="blog-slider-slide__title">
+										Эволюция ОАЭ 
+										в архитектуре: 
+										от ветряных башен 
+										до самого высокого небоскреба в мире	
+									</div>
+									<div class="blog-slider-slide__subtitle">
+										За пятьдесят лет независимости архитектурный облик Объединенных...
+									</div>
+								</div>
+							</div>
+							<div class="main-blog-slider__slide blog-slider-slide swiper-slide">
+								<img src="@img/blog/slide2.png" alt="">
+								<div class="blog-article-type">
+									Финансы
+								</div>
+								<div class="blog-slider-slide__bottom">
+									<div class="blog-slider-slide__title">
+										Почему Дубай?	
+									</div>
+									<div class="blog-slider-slide__subtitle">
+										Выбирая направления для переезда или инвестиции, необходимо...
+									</div>
+								</div>
+							</div>
+							<div class="main-blog-slider__slide blog-slider-slide swiper-slide">
+								<img src="@img/blog/slide3.png" alt="">
+								<div class="blog-article-type">
+									Культура
+								</div>
+								<div class="blog-slider-slide__bottom">
+									<div class="blog-slider-slide__title">
+										ОАЭ, в частности Дубай, стремятся стать глобальным финансовым хабом
+									</div>
+									<div class="blog-slider-slide__subtitle">
+										Финансы играют ключевую роль в экономике, особенно в такой ...
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-blog-slider__pagination swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_popup.htm',{})
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

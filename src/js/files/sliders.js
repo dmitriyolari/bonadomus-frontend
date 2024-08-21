@@ -732,6 +732,51 @@ function initSliders() {
 			}
 		});
 	}
+	if (document.querySelector('.main-blog-slider__slider')) { // Вказуємо склас потрібного слайдера
+		// Створюємо слайдер
+		new Swiper('.main-blog-slider__slider', { // Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			modules: [Pagination],
+			observer: true,
+			observeParents: true,
+			speed: 800,
+			watchOverflow: true,
+			freeMode: true,
+			// Пагінація
+
+			pagination: {
+				el: '.main-blog-slider__pagination',
+				clickable: true,
+			},
+
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Брейкпоінти
+			breakpoints: {
+				320: {
+					spaceBetween: 0,
+					slidesPerView: 1,
+				},
+				768: {
+					spaceBetween: 30,
+					slidesPerView: "auto",
+				}
+			},
+
+			// Події
+			on: {
+
+			}
+		});
+	}
 }
 // Скролл на базі слайдера (за класом swiper scroll для оболонки слайдера)
 function initSlidersScroll() {
