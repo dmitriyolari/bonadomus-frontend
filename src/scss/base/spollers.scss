@@ -21,6 +21,7 @@
 	position: relative;
 	list-style: none;
 	&::marker {
+		display: none;
 	}
 	._spoller-init & {
 		cursor: pointer;
