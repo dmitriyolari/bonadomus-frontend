@@ -31,8 +31,9 @@
 			background-size: cover !important;
 			background-color: #1c120c;
 			background-attachment: fixed;
-			background: url("@img/about/main/bg_pc.png") no-repeat center fixed;
+			background: url("@img/about/main/bg_pc.png") no-repeat center;
 			@media (max-width: 768px) {
+				-webkit-filter: blur(4.599999904632568px);
 				filter: blur(4.599999904632568px);
 			}
 			position: absolute;
@@ -78,10 +79,10 @@
 				content: "";
 				position: absolute;
 				left: 50%;
-				top: 35%;
+				top: 40%;
 				transform: translate(-50%, -50%);
-				width: calc(100% - 30px);
-				height: 40%;
+				width: 338px;
+				height: 240px;
 				background: url("@img/about/main/bg_mob.png") center center / cover no-repeat;
 			}
 		}
@@ -105,6 +106,8 @@
 	}
 }
 .bottom-main-about-page {
+	position: relative;
+	z-index: 3;
 	// .bottom-main-about-page__title
 
 	&__title {
@@ -141,7 +144,7 @@
 
 .info-about-page {
 	padding-top: 56px;
-	@media (min-width:768px){
+	@media (min-width: 768px) {
 		padding-top: 72px;
 	}
 	// .info-about-page__container
