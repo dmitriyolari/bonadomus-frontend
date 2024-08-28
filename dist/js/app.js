@@ -7455,6 +7455,7 @@
                     768: {
                         freeMode: false,
                         slidesPerView: 4,
+                        slidesPerGroup: 4,
                         spaceBetween: 30,
                         navigation: {
                             prevEl: ".command-swiper_prev",

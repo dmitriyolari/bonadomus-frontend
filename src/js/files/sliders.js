@@ -590,6 +590,7 @@ function initSliders() {
 				768: {
 					freeMode: false,
 					slidesPerView: 4,
+					slidesPerGroup: 4,
 					spaceBetween: 30,
 					// Кнопки "вліво/вправо"
 					navigation: {
