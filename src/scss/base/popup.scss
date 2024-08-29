@@ -1151,6 +1151,8 @@ body::after {
 	// .agent-form-popup__img
 
 	&__img {
+		border-radius: 50%;
+		overflow: hidden;
 		width: 48px;
 		height: 48px;
 		img {

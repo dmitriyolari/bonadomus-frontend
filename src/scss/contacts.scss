@@ -233,13 +233,13 @@
 	// .agent-form-contacts__img
 
 	&__img {
-		position: relative;
 		z-index: 3;
-		border-radius: 50%;
+		border: 6px #fff solid;
 		width: 86px;
 		height: 86px;
 		margin-right: -11px;
 		position: relative;
+		border-radius: 50%;
 		&::before {
 			content: "";
 			position: absolute;
@@ -247,20 +247,22 @@
 			height: 8px;
 			border-radius: 50%;
 			background-color: #59da44;
-			bottom: 13px;
-			right: 13px;
+			bottom: 3px;
+			right: 11px;
 		}
 		&::after {
 			content: "";
 			position: absolute;
-			bottom: 12px;
-			right: 11px;
+			bottom: 1px;
+			right: 10px;
 			width: 11px;
 			height: 11px;
 			background-color: #59da441a;
 			border-radius: 50%;
 		}
 		img {
+			border-radius: 50%;
+			overflow: hidden;
 			width: 100%;
 			height: 100%;
 			object-fit: contain;
