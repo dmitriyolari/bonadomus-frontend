@@ -3193,6 +3193,13 @@ input:-webkit-autofill:focus {
   background: transparent;
 }
 
+.command__row {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
 .command__title {
   margin-bottom: 32px;
   font-weight: 400;
@@ -3211,8 +3218,8 @@ input:-webkit-autofill:focus {
 }
 
 .command-slide__img {
-  margin-bottom: 24px;
-  min-height: 375px;
+  margin-bottom: 20px;
+  min-height: 293px;
   position: relative;
 }
 
@@ -10996,7 +11003,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .command {
-    padding: 64px 0;
+    padding: 128px 0;
+  }
+
+  .command__row {
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   .command__title {
